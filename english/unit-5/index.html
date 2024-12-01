@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fun English Learning - Unit 5</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: all 0.5s ease;
+    }
+
+    .preloader.fade-out {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .loader {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 5px solid #3498db;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Sembunyikan konten saat loading */
+    body {
+      overflow: hidden;
+    }
+
+    body.loaded {
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<body style="margin-bottom: 2.5%;">
+
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+  <div class="container py-5">
+
+    <section class="section-title">
+      <h2 style="text-align: center; font-size: calc(2rem + 0.9vw); margin-bottom: 2rem;">Do you like apple?</h2>
+    </section>
+
+    <section>
+      <h2 class="section-title">1. Barang-barang di kelas</h2>
+      <div class="items-container">
+        <!-- Item 1 -->
+        <div class="item-wrapper">
+          <div class="item-container">
+            <img src="assets/school.png" alt="Eraser" class="item-image">
+            <div class="item-name">School</div>
+            <div class="item-translation">(Sekolah)</div>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="item-wrapper">
+          <div class="item-container">
+            <img src="assets/studyroom.png" alt="Ruler" class="item-image">
+            <div class="item-name">Classroom</div>
+            <div class="item-translation">(Ruang Kelas)</div>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="item-wrapper">
+          <div class="item-container">
+            <img src="assets/chair.png" alt="Whiteboard" class="item-image">
+            <div class="item-name">Chair</div>
+            <div class="item-translation">(Kursi)</div>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="item-wrapper">
+          <div class="item-container">
+            <img src="assets/table.png" alt="Marker" class="item-image">
+            <div class="item-name">Table</div>
+            <div class="item-translation">(Meja)</div>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="item-wrapper">
+          <div class="item-container">
+            <img src="assets/book.png" alt="Sharpener" class="item-image">
+            <div class="item-name">Book</div>
+            <div class="item-translation">(Buku)</div>
+          </div>
+        </div>
+        <!-- Item 6 -->
+        <div class="item-wrapper">
+          <div class="item-container">
+            <img src="assets/pencil.png" alt="Chalk" class="item-image">
+            <div class="item-name">Pencil</div>
+            <div class="item-translation">(Pensil)</div>
+          </div>
+        </div>
+        <!-- Item 7 -->
+        <div class="item-wrapper">
+          <div class="item-container">
+            <img src="assets/pen.png" alt="Bag" class="item-image">
+            <div class="item-name">Pen</div>
+            <div class="item-translation">(Pulpen)</div>
+          </div>
+        </div>
+        <!-- Item 8 -->
+        <div class="item-wrapper">
+          <div class="item-container">
+            <img src="assets/pencil-case.png" alt="Bag" class="item-image">
+            <div class="item-name">Pencil Case</div>
+            <div class="item-translation">(Tempat Pensil)</div>
+          </div>
+        </div>
+        <!-- Item 9 -->
+        <div class="item-wrapper">
+          <div class="item-container">
+            <img src="assets/eraser.png" alt="Bag" class="item-image">
+            <div class="item-name">Eraser</div>
+            <div class="item-translation">(Penghapus)</div>
+          </div>
+        </div>
+        <!-- Item 10 -->
+        <div class="item-wrapper">
+          <div class="item-container">
+            <img src="assets/ruler.png" alt="Bag" class="item-image">
+            <div class="item-name">Ruler</div>
+            <div class="item-translation">(Penggaris)</div>
+          </div>
+        </div>
+        <!-- Item 11 -->
+        <div class="item-wrapper">
+          <div class="item-container">
+            <img src="assets/bag.png" alt="Bag" class="item-image">
+            <div class="item-name">Bag</div>
+            <div class="item-translation">(Tas)</div>
+          </div>
+        </div>
+        <!-- Item 12 -->
+        <div class="item-wrapper">
+          <div class="item-container">
+            <img src="assets/whiteboard.png" alt="Bag" class="item-image">
+            <div class="item-name">Whiteboard</div>
+            <div class="item-translation">(Papan Tulis)</div>
+          </div>
+        </div>
+        <!-- Item 13 -->
+        <div class="item-wrapper">
+          <div class="item-container">
+            <img src="assets/marker.png" alt="Bag" class="item-image">
+            <div class="item-name">Marker</div>
+            <div class="item-translation">(Spidol)</div>
+          </div>
+        </div>
+        <!-- Item 14 -->
+        <div class="item-wrapper">
+          <div class="item-container">
+            <img src="assets/pencil-sharpener.png" alt="Bag" class="item-image">
+            <div class="item-name">Sharpener</div>
+            <div class="item-translation">(Rautan)</div>
+          </div>
+        </div>
+        <!-- Item 15 -->
+        <div class="item-wrapper">
+          <div class="item-container">
+            <img src="assets/chalks.png" alt="Bag" class="item-image">
+            <div class="item-name">Chalk</div>
+            <div class="item-translation">(Kapur)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Singular Plural Section -->
+    <section style="margin-top: 2rem;">
+      <h2 class="section-title">2. Tunggal (singular) dan jamak (plural)</h2>
+
+      <!-- Singular Section -->
+      <div class="concept-box">
+        <h3 class="mb-3">Singular (Tunggal)</h3>
+        <p style="text-align: justify; font-size: larger;">Konsep singular (tunggal) digunakan ketika membicarakan atau
+          menyebutkan satu
+          benda, orang atau hewan.</p>
+
+        <div class="example-container">
+          <div class="example-box">
+            <img src="assets/this_is_book.png" alt="Book example" class="example-image">
+            <div class="example-text"><b>This</b> is a book</div>
+            <div class="example-translation">(<b>Ini</b> adalah <u>sebuah</u> buku)</div>
+          </div>
+          <div class="example-box">
+            <img src="assets/this_is_pencil.png" alt="Pencil example" class="example-image">
+            <div class="example-text"><b>This</b> is a pencil</div>
+            <div class="example-translation">(<b>Ini</b> adalah <u>sebuah</u> pensil)</div>
+          </div>
+        </div>
+
+        <div class="example-grid">
+          <div class="example-box">
+            <img src="assets/there_is_a_whiteboard.png" alt="Whiteboard example" class="example-image">
+            <div class="example-text"><b>There</b> is a whiteboard in the class</div>
+            <div class="example-translation">(<b>Ada</b> <u>sebuah</u> papan tulis di dalam kelas)</div>
+          </div>
+          <div class="example-box">
+            <img src="assets/there_is_a_ruler_in_the_pencilcase.png" alt="Ruler example" class="example-image">
+            <div class="example-text"><b>There</b> is a ruler in the pencil case</div>
+            <div class="example-translation">(<b>Ada</b> <u>sebuah</u> penggaris di dalam kotak pensil)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plural Section -->
+      <div class="concept-box">
+        <h3 class="mb-3">Plural (Jamak)</h3>
+        <p style="text-align: justify; font-size: larger;">Konsep plural (jamak) digunakan ketika membicarakan atau
+          menyebutkan lebih dari
+          satu benda, orang atau hewan. Tambahkan -s atau -es pada kata benda tunggal untuk mengubahnya menjadi bentuk
+          jamak.
+        </p>
+
+        <div class="row">
+          <h4 class="mb-3">Contoh perubahan kata:</h4>
+          <div class="col-md-6">
+            <ul class="plural-list">
+              <li class="plural-list-item">Chair → Chairs</li>
+              <li class="plural-list-item">Book → Books</li>
+              <li class="plural-list-item">Eraser → Erasers</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="plural-list">
+              <li class="plural-list-item">Pen → Pens</li>
+              <li class="plural-list-item">Table → Tables</li>
+              <li class="plural-list-item">Class → Classes</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="plural-examples">
+          <div class="example-box">
+            <img src="assets/three_marker.png" alt="Markers example" class="plural-image">
+            <div class="example-text"><b>There are</b> three markers</div>
+            <div class="example-translation">(<b>Ada</b> tiga spidol)</div>
+          </div>
+          <div class="example-box">
+            <img src="assets/pencilss.png" alt="Sharpeners example" class="plural-image">
+            <div class="example-text"><b>There are</b> two pencils</div>
+            <div class="example-translation">(<b>Ada</b> dua pensil)</div>
+          </div>
+          <div class="example-box">
+            <img src="assets/Picture6.png" alt="Books example" class="plural-image">
+            <div class="example-text"><b>There are</b> three books on the table</div>
+            <div class="example-translation">(<b>Ada</b> tiga buku di atas meja)</div>
+          </div>
+          <div class="example-box">
+            <img src="assets/three_chairs_classroom.png" alt="Chairs example" class="plural-image">
+            <div class="example-text"><b>There are</b> three chairs in the classroom</div>
+            <div class="example-translation">(<b>Ada</b> tiga kursi di dalam kelas)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Numbers Section -->
+    <section style="margin-top: 2rem;">
+      <h2 class="section-title">3. Berhitung angka 0-20</h2>
+      <div class="container my-5">
+        <div class="numbers-container">
+          <div class="numbers-grid">
+            <!-- 0 -->
+            <div class="number-card">
+              <div class="number-wrapper">
+                <div class="number">0</div>
+              </div>
+              <div class="number-text">Zero</div>
+            </div>
+
+            <!-- 1 -->
+            <div class="number-card">
+              <div class="number-wrapper">
+                <div class="number">1</div>
+              </div>
+              <div class="number-text">One</div>
+            </div>
+
+            <!-- 2 -->
+            <div class="number-card">
+              <div class="number-wrapper">
+                <div class="number">2</div>
+              </div>
+              <div class="number-text">Two</div>
+            </div>
+
+            <!-- 3 -->
+            <div class="number-card">
+              <div class="number-wrapper">
+                <div class="number">3</div>
+              </div>
+              <div class="number-text">Three</div>
+            </div>
+
+            <!-- 4 -->
+            <div class="number-card">
+              <div class="number-wrapper">
+                <div class="number">4</div>
+              </div>
+              <div class="number-text">Four</div>
+            </div>
+
+            <!-- 5 -->
+            <div class="number-card">
+              <div class="number-wrapper">
+                <div class="number">5</div>
+              </div>
+              <div class="number-text">Five</div>
+            </div>
+
+            <!-- 6 -->
+            <div class="number-card">
+              <div class="number-wrapper">
+                <div class="number">6</div>
+              </div>
+              <div class="number-text">Six</div>
+            </div>
+
+            <!-- 7 -->
+            <div class="number-card">
+              <div class="number-wrapper">
+                <div class="number">7</div>
+              </div>
+              <div class="number-text">Seven</div>
+            </div>
+
+            <!-- 8 -->
+            <div class="number-card">
+              <div class="number-wrapper">
+                <div class="number">8</div>
+              </div>
+              <div class="number-text">Eight</div>
+            </div>
+
+            <!-- 9 -->
+            <div class="number-card">
+              <div class="number-wrapper">
+                <div class="number">9</div>
+              </div>
+              <div class="number-text">Nine</div>
+            </div>
+
+            <!-- 10 -->
+            <div class="number-card">
+              <div class="number-wrapper">
+                <div class="number">10</div>
+              </div>
+              <div class="number-text">Ten</div>
+            </div>
+
+            <!-- 11 -->
+            <div class="number-card">
+              <div class="number-wrapper">
+                <div class="number">11</div>
+              </div>
+              <div class="number-text">Eleven</div>
+            </div>
+
+            <!-- 12 -->
+            <div class="number-card">
+              <div class="number-wrapper">
+                <div class="number">12</div>
+              </div>
+              <div class="number-text">Twelve</div>
+            </div>
+
+            <!-- 13 -->
+            <div class="number-card">
+              <div class="number-wrapper">
+                <div class="number">13</div>
+              </div>
+              <div class="number-text">Thirteen</div>
+            </div>
+
+            <!-- 14 -->
+            <div class="number-card">
+              <div class="number-wrapper">
+                <div class="number">14</div>
+              </div>
+              <div class="number-text">Fourteen</div>
+            </div>
+
+            <!-- 15 -->
+            <div class="number-card">
+              <div class="number-wrapper">
+                <div class="number">15</div>
+              </div>
+              <div class="number-text">Fifteen</div>
+            </div>
+
+            <!-- 16 -->
+            <div class="number-card">
+              <div class="number-wrapper">
+                <div class="number">16</div>
+              </div>
+              <div class="number-text">Sixteen</div>
+            </div>
+
+            <!-- 17 -->
+            <div class="number-card">
+              <div class="number-wrapper">
+                <div class="number">17</div>
+              </div>
+              <div class="number-text">Seventeen</div>
+            </div>
+
+            <!-- 18 -->
+            <div class="number-card">
+              <div class="number-wrapper">
+                <div class="number">18</div>
+              </div>
+              <div class="number-text">Eighteen</div>
+            </div>
+
+            <!-- 19 -->
+            <div class="number-card">
+              <div class="number-wrapper">
+                <div class="number">19</div>
+              </div>
+              <div class="number-text">Nineteen</div>
+            </div>
+
+            <!-- 20 -->
+            <div class="number-card">
+              <div class="number-wrapper">
+                <div class="number">20</div>
+              </div>
+              <div class="number-text">Twenty</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Section untuk latihan -->
+    <div class="container py-4 mb-4" style="margin-top: 2%;">
+      <!-- Section Title with Icon -->
+
+      <div class="card border-0 shadow-lg rounded-4 bg-white">
+        <div class="card-body p-4 p-lg-5">
+          <!-- Introduction List -->
+          <div class="row">
+            <h5 style="color: #16A5EC">Kegiatan Belajar 1</h5>
+            <i class="mb-4">Susun huruf acak berikut menjadi nama benda di kelas dalam bahasa Inggris yang benar!</i>
+            <ol class="mx-4 mb-4" style="font-size: 18px">
+              <li>k - o - b - o = ______ (buku)</li>
+              <li>c - h - i - a - r = ______ (kursi)</li>
+              <li>p - n - e = ______ (pulpen)</li>
+              <li>r - s - a - e - r - e = ______ (penghapus)</li>
+              <li>l - u - r - e - r = ______ (penggaris)</li>
+            </ol>
+
+            <h5 style="color: #16A5EC">Kegiatan Belajar 2</h5>
+            <i class="mb-4">Lengkapi kalimat berikut dengan menggunakan kata <strong>‘there is’</strong> atau
+              <strong>‘there are’</strong>!</i>
+            <ol class="mx-4 mb-4" style="font-size: 18px">
+              <li>______ a marker in the class. <i>(Ada sebuah spidol di kelas.)</i></li>
+              <li>______ two pens in the bag. <i>(Ada dua pulpen di dalam tas.)</i></li>
+              <li>______ a chair near the table. <i>(Ada sebuah kursi di dekat meja.)</i></li>
+              <li>______ three erasers on the desk. <i>(Ada tiga penghapus di atas meja.)</i></li>
+              <li>______ one ruler in the pencil case. <i>(Ada satu penggaris di dalam kotak pensil.)</i></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Section untuk latihan -->
+  </div>
+
+  <!-- Tambahkan di akhir body sebelum closing tag -->
+  <script>
+    window.addEventListener('load', function () {
+      // Sembunyikan preloader
+      const preloader = document.querySelector('.preloader');
+      document.body.classList.add('loaded');
+
+      setTimeout(function () {
+        preloader.classList.add('fade-out');
+
+        // Hapus preloader dari DOM setelah transisi
+        setTimeout(function () {
+          preloader.style.display = 'none';
+        }, 500);
+      }, 1000); // Waktu loading bisa disesuaikan
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

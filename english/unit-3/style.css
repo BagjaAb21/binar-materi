@@ -1,0 +1,419 @@
+/* Global Styles */
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #f8f9fa;
+  --accent-yellow: #ffd93d;
+  --accent-green: #98d8aa;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: var(--text-primary);
+  background-color: #f0f2f5;
+}
+
+/* Dialog Section Styles */
+
+.audio-wrapper {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.audio-wrapper audio {
+  height: 30px;
+  width: 150px; /* Sesuaikan ukuran yang diinginkan */
+}
+
+/* Optional: Untuk styling custom pada audio player */
+audio::-webkit-media-controls-panel {
+  background-color: #f0f0f0;
+  border-radius: 15px;
+}
+
+audio::-webkit-media-controls-play-button {
+  background-color: #fff;
+  border-radius: 50%;
+}
+.dialog-section {
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.conversation-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.chat-bubble {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-bubble::before {
+  content: attr(data-message);
+  position: absolute;
+  top: -12px;
+  left: 15px;
+  background-color: #ff6b6b;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.chat-left {
+  background-color: var(--accent-yellow);
+}
+
+.chat-right {
+  background-color: var(--accent-green);
+}
+
+.message-content {
+  margin-top: 0.5rem;
+}
+
+.english {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.indonesian {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.character-wrapper {
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.character-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.character-img:hover {
+  transform: scale(1.05);
+}
+
+.audio-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: transform 0.2s ease;
+}
+
+.audio-btn:hover {
+  transform: scale(1.1);
+}
+
+.audio-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header-section {
+    padding: 0.5rem;
+  }
+
+  .site-title {
+    font-size: 1.5rem;
+  }
+
+  .dialog-section {
+    padding: 1rem;
+  }
+
+  .chat-bubble {
+    padding: 1.2rem;
+  }
+
+  .english {
+    font-size: 1rem;
+  }
+
+  .indonesian {
+    font-size: 0.9rem;
+  }
+
+  .character-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* End Section from chat buble */
+
+/* section sapaan sehari hari*/
+/* Card Styles */
+.greeting-card {
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.greeting-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Wrapper Gambar */
+.card-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Tinggi tetap untuk gambar */
+  margin-bottom: 15px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Style Gambar */
+.greeting-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Memastikan gambar tidak terpotong */
+  transition: transform 0.3s ease;
+}
+
+.greeting-card:hover .greeting-img {
+  transform: scale(1.05);
+}
+
+/* Text Styles */
+.greeting-text {
+  text-align: center;
+  padding: 10px;
+}
+
+.greeting-text .english {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.greeting-text .indonesian {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-bottom: 3px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+  .greeting-text .english {
+    font-size: 1.1rem;
+  }
+
+  .greeting-text .indonesian {
+    font-size: 0.9rem;
+  }
+
+  .card-image-wrapper {
+    height: 180px; /* Mengurangi tinggi gambar untuk tablet */
+  }
+}
+
+@media (max-width: 575.98px) {
+  .greeting-card {
+    padding: 1rem;
+  }
+
+  .card-image-wrapper {
+    height: 150px; /* Mengurangi tinggi gambar untuk mobile */
+  }
+
+  .greeting-img {
+    object-fit: contain; /* Tetap mempertahankan rasio aspek */
+  }
+}
+/* end section sapaan */
+
+/* tanya kabar Start */
+
+.section-title {
+  font-size: calc(1rem + 0.4vw);
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Card styling for better mobile view */
+.table-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* Bootstrap table customization */
+.table {
+  margin-bottom: 0;
+  border-radius: 1rem; /* Add rounded corners to the table */
+}
+
+/* Header styling */
+.table > :not(caption) > * > * {
+  padding: 1rem 1.25rem;
+}
+
+.table > thead > tr > th {
+  background-color: #e4a66c !important;
+  color: white;
+  font-weight: 700;
+  font-size: calc(1.1rem + 0.3vw);
+  text-align: center;
+  border-color: #d69559;
+}
+
+/* Body styling */
+.table > tbody > tr > td {
+  background-color: #fce4cf;
+  border-color: #e4a66c;
+  vertical-align: top;
+  font-size: calc(1rem + 0.2vw);
+}
+
+/* List styling */
+.expression-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.translation {
+  font-style: italic;
+  color: #666;
+  font-weight: 500;
+  font-size: 0.95em;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .table-responsive-stack .table thead {
+    display: none;
+  }
+
+  .table-responsive-stack .table td {
+    display: block;
+    text-align: left;
+    border-bottom: none;
+  }
+
+  .table-responsive-stack .table td:first-child {
+    border-top: 1px solid #e4a66c;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .table-responsive-stack .table td:last-child {
+    border-bottom: 1px solid #e4a66c;
+    border-radius: 0 0 0.5rem 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .table-responsive-stack .table td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    color: #333;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+}
+/* tanya kabar End */
+
+/* table with gambar */
+/* Styling untuk container tabel */
+.possession-table {
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+/* Styling untuk header tabel */
+.table > thead > tr > th {
+  background-color: #cd853f !important; /* Warna coklat untuk header */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Styling untuk sel tabel */
+.table > tbody > tr > td {
+  text-align: center;
+  padding: 1.5rem;
+  vertical-align: middle;
+}
+
+/* Styling untuk gambar dalam tabel */
+.example-img {
+  max-width: 150px;
+  height: auto;
+  margin: 1rem auto;
+  display: block;
+}
+
+/* Styling untuk teks contoh */
+.example-text {
+  margin: 1rem 0;
+}
+
+.example-english {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.example-indo {
+  font-style: italic;
+  color: #666;
+}
+
+/* Styling responsif */
+@media (max-width: 768px) {
+  .table > thead > tr > th {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .table > tbody > tr > td {
+    padding: 1rem;
+  }
+
+  .example-img {
+    max-width: 120px;
+  }
+}
+/* table with gambar end */

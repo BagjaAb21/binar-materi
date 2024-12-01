@@ -1,0 +1,249 @@
+body {
+  background-color: #f8f9fa;
+  font-family: "Arial", sans-serif;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.title-section h1 {
+  font-size: calc(1.2rem + 1vw);
+  color: #000000;
+  text-align: left;
+}
+
+.number-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  color: #2c3e50;
+  font-size: calc(1rem + 0.5vw);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.number-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.number-cell {
+  background-color: #fff;
+  border: 1px solid #c4c4c4;
+  border-radius: 6px;
+  padding: 8px 4px;
+  text-align: center;
+  font-size: calc(0.7rem + 0.3vw);
+  transition: all 0.3s ease;
+}
+
+.number-cell:hover {
+  background-color: #e9ecef;
+  transform: scale(1.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.empty-cell {
+  background-color: #f8f9fa;
+  border: 1px solid #c4c4c4;
+  border-radius: 6px;
+}
+
+.empty-cell:hover {
+  background-color: #e9ecef;
+  transform: scale(1.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mascot-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.mascot-item {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.mascot-item:hover {
+  transform: translateY(-5px);
+}
+
+.mascot-item img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .number-grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .mascot-container {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .number-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;
+  }
+
+  .number-cell {
+    padding: 6px 3px;
+  }
+
+  .mascot-container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-container {
+    padding: 10px;
+  }
+
+  .number-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .title-section h1 {
+    font-size: 1.2rem;
+  }
+
+  .mascot-item {
+    padding: 10px;
+  }
+}
+
+/* end of styling bilangan */
+
+.examples-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.example-title {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.example-table {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.example-table td {
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  vertical-align: top;
+}
+
+.example-image {
+  background-color: #fce4ec;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.example-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.math-symbol {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.explanation {
+  font-size: 2rem;
+  color: #000000;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.comparison-box {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.comparison-numbers {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.comparison-numbers2 {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .example-table td {
+    padding: 15px;
+  }
+  .explanation {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .example-title {
+    font-size: 1.2rem;
+  }
+
+  .math-symbol {
+    font-size: 1rem;
+  }
+
+  .comparison-numbers {
+    font-size: 1.2rem;
+  }
+  .comparison-numbers2 {
+    font-size: 0.9rem;
+  }
+  .comparison-box h3 {
+    text-align: left;
+  }
+}

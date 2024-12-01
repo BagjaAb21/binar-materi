@@ -1,0 +1,519 @@
+body {
+  background-color: #f8f9fa;
+  font-family: "Arial", sans-serif;
+  padding: 20px;
+}
+
+.integer-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Card Definition Styling */
+.definition-card {
+  background: linear-gradient(to bottom, #fffde7 60%, #fff9c4);
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.definition-text {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.red-text {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.examples-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 60px;
+  margin-top: 20px;
+}
+
+.number-item {
+  text-align: center;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4a4a4a;
+  margin-bottom: 10px;
+}
+
+.circle-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check {
+  background-color: #4caf50;
+  color: white;
+}
+
+.cross {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Number Line Styling */
+.number-line-card {
+  background-color: #fffde7;
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.line-title {
+  font-size: 1.3rem;
+  color: #4a4a4a;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.line-container {
+  position: relative;
+  padding: 40px 20px 20px;
+}
+
+.section-labels {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 40px;
+}
+
+.section-label {
+  font-weight: bold;
+  color: #4a4a4a;
+  font-size: 1.1rem;
+}
+
+.line-base {
+  height: 2px;
+  background-color: #4a4a4a;
+  position: relative;
+  margin: 0 20px;
+}
+
+.markers {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.marker-line {
+  width: 2px;
+  height: 10px;
+  background-color: #4a4a4a;
+  margin-bottom: 5px;
+}
+
+.marker-number {
+  color: #4a4a4a;
+  font-size: 1rem;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+
+.arrow-left {
+  left: -20px;
+  border-right: 12px solid #4a4a4a;
+}
+
+.arrow-right {
+  right: -20px;
+  border-left: 12px solid #4a4a4a;
+}
+
+@media (max-width: 768px) {
+  .definition-text {
+    font-size: 1.2rem;
+  }
+
+  .examples-row {
+    gap: 30px;
+  }
+
+  .number {
+    font-size: 2rem;
+  }
+}
+/* end styling integer section */
+.math-operations-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 15px;
+}
+
+.operation-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.operation-table td {
+  padding: 1.5rem;
+  border: 1px solid #dee2e6;
+  vertical-align: top;
+}
+
+.operation-table td:first-child {
+  width: 40%;
+}
+
+.yellow-box {
+  background-color: #fff9c4;
+  padding: 1.5rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+.division-section {
+  margin-bottom: 1rem;
+}
+
+.explanation {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.number-list {
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.number-list li {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.red-text {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.rata {
+  text-align: justify;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .operation-table,
+  .operation-table tbody,
+  .operation-table tr,
+  .operation-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .operation-table td {
+    padding: 1rem;
+  }
+
+  .operation-table td:first-child {
+    width: 100%;
+  }
+
+  .yellow-box {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .explanation {
+    font-size: 1rem;
+  }
+
+  .number-list {
+    padding-left: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .math-operations-container {
+    padding: 0 10px;
+  }
+
+  .operation-table td {
+    padding: 0.8rem;
+  }
+
+  .yellow-box {
+    font-size: 0.9rem;
+    line-height: 1.8;
+  }
+
+  .explanation {
+    font-size: 0.9rem;
+  }
+}
+
+/* Styling untuk kontainer utama */
+.math-operations-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 15px;
+  font-family: "Arial", sans-serif;
+}
+
+/* Styling untuk section aturan */
+.rules-section {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+/* Styling untuk section operasi */
+.operations-section {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk judul */
+.section-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.subsection-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 2rem 0 1rem;
+  color: #333;
+}
+
+/* Styling untuk list */
+.rules-list {
+  list-style-position: inside;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+}
+
+.rules-list li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Styling untuk text content */
+.content-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin: 1.5rem 0;
+}
+
+.rata {
+  text-align: justify;
+}
+
+/* Styling untuk container gambar */
+.image-container {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.math-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-caption {
+  font-size: 1rem;
+  color: #000000;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Styling untuk box aturan */
+.rules-box {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.rules-title {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+/* Utility classes */
+.red-text {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+/* Styling untuk subsection */
+.subsection {
+  margin-bottom: 3rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .rules-section,
+  .operations-section {
+    padding: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+  .subsection-title {
+    font-size: 1.1rem;
+  }
+
+  .content-text {
+    font-size: 1rem;
+  }
+
+  .image-caption {
+    font-size: 0.9rem;
+  }
+
+  .rules-box {
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .math-operations-container {
+    padding: 0 10px;
+  }
+
+  .rules-section,
+  .operations-section {
+    padding: 1rem;
+  }
+
+  .content-text {
+    font-size: 0.9rem;
+  }
+
+  .rules-list li {
+    font-size: 0.9rem;
+  }
+
+  .rules-box {
+    padding: 1rem;
+  }
+
+  .image-caption {
+    font-size: 0.8rem;
+  }
+}
+
+/* Styling untuk paragraf */
+p {
+  margin: 0 0 1rem 0;
+}
+
+/* Styling untuk spacing antara elements */
+.subsection > *:last-child {
+  margin-bottom: 0;
+}
+
+/* Additional styling for better visual hierarchy */
+strong {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* Improve readability for long content */
+.content-text p {
+  margin-bottom: 1.2rem;
+}
+
+/* Enhance box shadows on hover */
+.math-image:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Improve list readability */
+.rules-list li {
+  padding-left: 1rem;
+  position: relative;
+}
+
+/* Add smooth transitions */
+.rules-box,
+.math-image,
+.operations-section,
+.rules-section {
+  transition: all 0.3s ease;
+}
+
+/* Improve accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

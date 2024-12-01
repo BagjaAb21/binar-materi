@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fun English Learning - Unit 6</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: all 0.5s ease;
+    }
+
+    .preloader.fade-out {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .loader {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 5px solid #3498db;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Sembunyikan konten saat loading */
+    body {
+      overflow: hidden;
+    }
+
+    body.loaded {
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<body style="margin-bottom: 2.5%;">
+
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <section class="section-title">
+    <h2 style="text-align: center; font-size: calc(2rem + 0.9vw); margin-bottom: 2rem; margin-top: 2rem;">We watch TV on
+      Sunday</h2>
+  </section>
+  <div class="container">
+    <h2 style="margin-top: 2rem;">1. Nama-nama hari dalam seminggu</h2>
+    <div class="table-container">
+      <div class="row g-4">
+        <!-- Tabel Pertama -->
+        <div class="col-12 col-md-6">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Bahasa Inggris</th>
+                <th>Bahasa Indonesia</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sunday</td>
+                <td>Minggu</td>
+              </tr>
+              <tr>
+                <td>Monday</td>
+                <td>Senin</td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td>Selasa</td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td>Rabu</td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>Kamis</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>Jum'at</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>Sabtu</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Tabel Kedua -->
+        <div class="col-12 col-md-6">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Bahasa Inggris</th>
+                <th>Bahasa Indonesia</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Today</td>
+                <td>Hari ini</td>
+              </tr>
+              <tr>
+                <td>Yesterday</td>
+                <td>Kemarin</td>
+              </tr>
+              <tr>
+                <td>Tomorrow</td>
+                <td>Besok</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 2rem;">2. Aktifitas sehari-hari</h2>
+    <div class="container my-5">
+
+      <!-- Greetings Grid -->
+      <div class="row g-4">
+        <!-- Read Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/reading.png" class="greeting-img" alt="Morning scene with sunrise and tree">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Read</h3>
+              <p class="indonesian">Baca</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Write Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/note.png" class="greeting-img" alt="Afternoon scene with sun and tree">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Write</h3>
+              <p class="indonesian">Tulis</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Draw Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/drawing.png" class="greeting-img" alt="Evening scene with moon and tree">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Draw</h3>
+              <p class="indonesian">Gambar</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Play Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/playtime.png" class="greeting-img" alt="Night scene with sleeping person">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Play</h3>
+              <p class="indonesian">Main</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Eat Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/eating-disorder.png" class="greeting-img" alt="Students saying goodbye">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Eat</h3>
+              <p class="indonesian">Makan</p>
+            </div>
+          </div>
+        </div>
+
+        <!--  Drink Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/drink-water.png" class="greeting-img" alt="Parent and child saying see you tomorrow">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Drink</h3>
+              <p class="indonesian">Minum</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Study Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/study.png" class="greeting-img" alt="Parent and child saying see you tomorrow">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Study</h3>
+              <p class="indonesian">Belajar</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- swim Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/swimming.png" class="greeting-img" alt="Parent and child saying see you tomorrow">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Swim</h3>
+              <p class="indonesian">Renang</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paint Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/painting.png" class="greeting-img" alt="Parent and child saying see you tomorrow">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Paint</h3>
+              <p class="indonesian">Lukis</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Watch Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/tv-watching.png" class="greeting-img" alt="Parent and child saying see you tomorrow">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Watch</h3>
+              <p class="indonesian">Nonton</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sleep Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/sleep.png" class="greeting-img" alt="Parent and child saying see you tomorrow">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Sleep</h3>
+              <p class="indonesian">Tidur</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cook Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/cooking.png" class="greeting-img" alt="Parent and child saying see you tomorrow">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Cook</h3>
+              <p class="indonesian">Masak</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wash Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/clean-dishes.png" class="greeting-img" alt="Parent and child saying see you tomorrow">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Wash</h3>
+              <p class="indonesian">Cuci</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shop Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/shopping.png" class="greeting-img" alt="Parent and child saying see you tomorrow">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Shop</h3>
+              <p class="indonesian">Belanja</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pray Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/praying.png" class="greeting-img" alt="Parent and child saying see you tomorrow">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Pray</h3>
+              <p class="indonesian">Berdo'a</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Section untuk latihan -->
+    <div class="container py-4 mb-4" style="margin-top: 2%;">
+      <!-- Section Title with Icon -->
+
+      <div class="card border-0 shadow-lg rounded-4 bg-white">
+        <div class="card-body p-4 p-lg-5">
+          <!-- Introduction List -->
+          <div class="row">
+            <h4 style="color: #16A5EC">Kegiatan Belajar 1</h4>
+            <i>Isi bagian yang kosong dengan jawaban yang tepat!</i>
+            <i class="mb-4"><strong>Contoh: Today is Monday. Tomorrow is <u>Tuesday</u>. (Hari ini hari Senin. Besok
+                hari Selasa.)</strong></i>
+            <ol class="mx-4 mb-4" style="font-size: 18px">
+              <li>Today is Wednesday. Tomorrow is ______.</li>
+              <li>Today is Friday. Yesterday was ______.</li>
+              <li>Today is ______. Tomorrow is Sunday.</li>
+              <li>Today is ______. Yesterday was Tuesday.</li>
+              <li>Yesterday was ______. Today is Monday.</li>
+            </ol>
+
+            <h4 style="color: #16A5EC">Kegiatan Belajar 2</h4>
+            <i>Pilih kata yang tepat untuk melengkapi bagian yang kosong!</i>
+            <i class="mb-4"><strong>Contoh: I <u>A. eat</u> breakfast in the morning. (A. eat / B. play). (Saya A. makan
+                sarapan di pagi hari.)</strong></i>
+            <ol class="mx-4 mb-4" style="font-size: 18px">
+              <li>We ______ TV on Sunday. (A. watch / b. write)<br>
+                <i>(Kami ______ TV pada hari Minggu.)</i>
+              </li>
+              <li>They ______ soccer on Saturday. (A. play / B. drink)<br>
+                <i>(Mereka ______ sepak bola pada hari Sabtu.)</i>
+              </li>
+              <li>She ______ water after singing. (A. drink / B. read)<br>
+                <i>(Dia ______ air setelah bernyanyi.)</i>
+              </li>
+              <li>I ______ my hands before eating lunch. (A. wash / B. draw)<br>
+                <i>(Saya ______ tangan saya sebelum makan siang.)</i>
+              </li>
+              <li>He ______ a storybook in the evening. (A. read / B. sing)<br>
+                <i>(Dia ______ sebuah buku cerita pada malam hari.)</i>
+              </li>
+            </ol>
+
+            <h4 style="color: #16A5EC">Kegiatan Belajar 3</h4>
+            <i class="mb-4">Lengkapi bagian yang kosong dengan kata <u>‘like’</u> yang berarti <u>‘suka’</u> atau
+              <u>‘dislike’</u> yang berarti <u>‘tidak suka’</u>!</i>
+            <ol class="mx-4 mb-4" style="font-size: 18px">
+              <li>I ______ apple. That is my favorite fruit.<br>
+                <i>(Saya ______ apel. Itu adalah buah kesukaan saya.)</i>
+              </li>
+              <li>He ______ carrots. He never eats it.<br>
+                <i>(Dia ______ wortel. Dia tidak pernah memakannya.)</i>
+              </li>
+              <li>My sister ______ reading books. She reads every night.<br>
+                <i>(Saudara perempuan saya ______ membaca buku. Dia membaca setiap malam.)</i>
+              </li>
+              <li>They ______ playing football. That is their favorite sport.<br>
+                <i>(Mereka ______ bermain sepak bola. Itu adalah olahraga favorit mereka.)</i>
+              </li>
+              <li>She ______ swimming. She swims every Saturday.<br>
+                <i>(Dia ______ berenang. Dia berenang setiap Sabtu.)</i>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Section untuk latihan -->
+  </div>
+
+  <!-- Tambahkan di akhir body sebelum closing tag -->
+  <script>
+    window.addEventListener('load', function () {
+      // Sembunyikan preloader
+      const preloader = document.querySelector('.preloader');
+      document.body.classList.add('loaded');
+
+      setTimeout(function () {
+        preloader.classList.add('fade-out');
+
+        // Hapus preloader dari DOM setelah transisi
+        setTimeout(function () {
+          preloader.style.display = 'none';
+        }, 500);
+      }, 1000); // Waktu loading bisa disesuaikan
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

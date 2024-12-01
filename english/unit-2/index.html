@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fun English Learning - Unit 2</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: all 0.5s ease;
+    }
+
+    .preloader.fade-out {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .loader {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 5px solid #3498db;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Sembunyikan konten saat loading */
+    body {
+      overflow: hidden;
+    }
+
+    body.loaded {
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<body style="margin-bottom: 2.5%;">
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+    <!-- Section Title -->
+    <section class="section-title">
+      <h2 style="text-align: center; font-size: calc(2rem + 0.9vw); margin-bottom: 2rem;">
+        Good morning! How are you today?
+      </h2>
+      <p class="subtitle" style="font-size: 18px;">Berlatih lah membaca dialog di bawah ini bersama temanmu!</p>
+    </section>
+
+    <!-- Dialog Section -->
+    <section class="dialog-section">
+      <div class="row g-4">
+        <!-- Left Column -->
+        <div class="col-md-6">
+          <div class="conversation-column">
+            <div class="chat-bubble chat-left" data-message="1">
+              <div class="message-content">
+                <p class="english">Hi, Hafiz! How are you today?</p>
+                <p class="indonesian">Hai Hafiz! Apa kabarmu hari ini?</p>
+                <div class="audio-wrapper">
+                  <audio controls>
+                    <source src="audio/Hi_Hafiz_how_are_you_today.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+              </div>
+            </div>
+
+            <div class="character-wrapper">
+              <img src="assets/boy.png" alt="Queena" class="character-img">
+            </div>
+
+            <div class="chat-bubble chat-left" data-message="2">
+              <div class="message-content">
+                <p class="english"> Helo, Riko! I am a little tired. How about you?</p>
+                <p class="indonesian">Halo, Riko! Aku agak lelah. Bagaimana denganmu?</p>
+                <div class="audio-wrapper">
+                  <audio controls>
+                    <source src="audio/I_am_little_tired.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+              </div>
+            </div>
+            <div class="character-wrapper">
+              <img src="assets/man.png" style="margin-left: 0.3rem;" alt="Azzam" class="character-img">
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Right Column -->
+        <div class="col-md-6">
+          <div class="conversation-column">
+            <div class="chat-bubble chat-right" data-message="3">
+              <div class="message-content">
+                <p class="english"> I am fine, thank you. Why are you tired?</p>
+                <p class="indonesian">Saya baik-baik saja, terima kasih. Mengapa Kamu lelah?</p>
+                <div class="audio-wrapper">
+                  <audio controls>
+                    <source src="audio/Why_you_tired.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+              </div>
+            </div>
+
+            <div class="character-wrapper">
+              <img src="assets/boy.png" alt="Queena" class="character-img">
+            </div>
+
+            <div class="chat-bubble chat-right" data-message="4">
+              <div class="message-content">
+                <p class="english">I am tired because I played soccer this morning.</p>
+                <p class="indonesian">Saya lelah karena saya bermain sepak bola pagi ini.</p>
+                <div class="audio-wrapper">
+                  <audio controls>
+                    <source src="audio/I_play_soccer_this_morning.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+              </div>
+            </div>
+            <div class="character-wrapper">
+              <img src="assets/man.png" style="margin-left: 0.3rem;" alt="Azzam" class="character-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Dialog Section -->
+
+    <!-- Daily Greetings Section -->
+    <div class="container my-5">
+      <!-- Section Title -->
+      <div class="section-title">
+        <h2 id="sapaan-sehari-hari" style="font-size: larger;">1. Sapaan sehari-hari</h2>
+      </div>
+
+      <!-- Greetings Grid -->
+      <div class="row g-4">
+        <!-- Morning Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/sunrise.png" class="greeting-img" alt="Morning scene with sunrise and tree">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Good morning</h3>
+              <p class="indonesian">(Selamat pagi)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Afternoon Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/sunsets.png" class="greeting-img" alt="Afternoon scene with sun and tree">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Good afternoon</h3>
+              <p class="indonesian">(Selamat siang)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Evening Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/cloudy-night.png" class="greeting-img" alt="Evening scene with moon and tree">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Good evening</h3>
+              <p class="indonesian">(Selamat malam)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Night Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/sleep.png" class="greeting-img" alt="Night scene with sleeping person">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Good night</h3>
+              <p class="indonesian">(Selamat malam/<br>selamat tidur)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Goodbye Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/see-you-soon.png" class="greeting-img" alt="Students saying goodbye">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Goodbye</h3>
+              <p class="indonesian">(Selamat tinggal)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- See You Tomorrow Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/tomorrow.png" class="greeting-img" alt="Parent and child saying see you tomorrow">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">See you tomorrow</h3>
+              <p class="indonesian">(Sampai jumpa)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section Table1 -->
+    <div class="container" style="margin-top: 2%;">
+      <h2 style="font-size: larger; margin-bottom: 1%;">2. Menanyakan dan menjawab kabar</h2>
+      <div class="table-container">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th width="50%">Expressions</th>
+                <th width="50%">Responses</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <ul>
+                    <li>How are you today? <span class="italic">(Bagaimana kabarmu hari ini?)</span></li>
+                    <li>How are you feeling today? <span class="italic">(Bagaimana perasaanmu hari ini?)</span></li>
+                    <li>How do you do? <span class="italic">(Apa kabarmu?)</span></li>
+                    <li>Are you okay? <span class="italic">(Apakah kamu baik-baik saja?)</span></li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>I am good! How about you? <span class="italic">(Saya baik-baik saja! Bagaimana denganmu?)</span>
+                    </li>
+                    <li>I am okay! <span class="italic">(Saya baik-baik saja!)</span></li>
+                    <li>I am happy! <span class="italic">(Saya senang!)</span></li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- End Section Table1 -->
+
+    <div class="container my-5">
+      <div class="section-title mb-4">
+        <h2 id="kata-sifat" style="font-size: larger;">3. Kata sifat terkait kabar seseorang</h2>
+      </div>
+
+      <!-- Container Utama dengan Flexbox -->
+      <div class="moods-container">
+        <!-- Happy Card -->
+        <div class="mood-card">
+          <div class="mood-badge">Happy</div>
+          <div class="mood-content">
+            <div class="image-container">
+              <img src="assets/happy.png" alt="Happy expression">
+            </div>
+            <div class="mood-text">
+              <p class="english-text">
+                I am <span class="mood-word">happy</span> today!
+              </p>
+              <p class="indo-text">
+                (Saya <span class="mood-word-indo">senang</span> hari ini!)
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sad Card -->
+        <div class="mood-card">
+          <div class="mood-badge">Sad</div>
+          <div class="mood-content">
+            <div class="image-container">
+              <img src="assets/sad.png" alt="Sad expression">
+            </div>
+            <div class="mood-text">
+              <p class="english-text">
+                I am <span class="mood-word">sad</span> because it is raining.
+              </p>
+              <p class="indo-text">
+                (Saya <span class="mood-word-indo">sedih</span> karena sedang hujan.)
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tired Card -->
+        <div class="mood-card">
+          <div class="mood-badge">Tired</div>
+          <div class="mood-content">
+            <div class="image-container">
+              <img src="assets/worktable.png" alt="Tired expression">
+            </div>
+            <div class="mood-text">
+              <p class="english-text">
+                I am <span class="mood-word">tired</span> after playing soccer.
+              </p>
+              <p class="indo-text">
+                (Saya <span class="mood-word-indo">lelah</span> setelah bermain sepak bola.)
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Excited Card -->
+        <div class="mood-card">
+          <div class="mood-badge">Excited</div>
+          <div class="mood-content">
+            <div class="image-container">
+              <img src="assets/excited.png" alt="Excited expression">
+            </div>
+            <div class="mood-text">
+              <p class="english-text">
+                I am <span class="mood-word">excited</span> about the trip!
+              </p>
+              <p class="indo-text">
+                (Saya <span class="mood-word-indo">bersemangat</span> tentang perjalanannya!)
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Angry Card -->
+        <div class="mood-card">
+          <div class="mood-badge">Angry</div>
+          <div class="mood-content">
+            <div class="image-container">
+              <img src="assets/anger.png" alt="Angry expression">
+            </div>
+            <div class="mood-text">
+              <p class="english-text">
+                I am <span class="mood-word">angry</span> because my toy is broken.
+              </p>
+              <p class="indo-text">
+                (Saya <span class="mood-word-indo">marah</span> karena mainan saya rusak.)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section untuk latihan -->
+    <div class="container py-4 mb-4" style="margin-top: 2%;">
+      <!-- Section Title with Icon -->
+
+      <div class="card border-0 shadow-lg rounded-4 bg-white">
+        <div class="card-body p-4 p-lg-5">
+          <!-- Introduction List -->
+          <div class="row">
+            <h4 style="color: #16A5EC">Kegiatan Belajar 1</h4>
+            <i class="mb-4">Ayo bermain sambil belajar! Lakukan kegiatan ini bersama pengajar dan teman-teman di ruang
+              belajar. Dengarkan sapaan sehari-hari dari pengajarmu, dan ikuti instruksi berikut!</i>
+            <h5 class="mb-4">
+              <ul>
+                <li style="margin-bottom: 1rem;">Jika pengajar mengucapkan <strong>‘good morning’</strong>, maka tepuk
+                  tangan satu kali.</li>
+                <li style="margin-bottom: 1rem;">Jika pengajar mengucapkan <strong>‘good afternoon’</strong>, maka tepuk
+                  tangan dua kali.</li>
+                <li style="margin-bottom: 1rem;">Jika pengajar mengucapkan <strong>‘good evening’</strong>, maka tepuk
+                  tangan tiga kali.</li>
+                <li style="margin-bottom: 1rem;">Jika pengajar mengucapkan <strong>‘goodbye’</strong>, maka jangan tepuk
+                  tangan.</li>
+              </ul>
+            </h5>
+
+            <h4 style="color: #16A5EC">Kegiatan Belajar 2</h4>
+            <i class="mb-4">Cocokkan sapaan di kolom A dengan respon yang sesuai di kolom B.</i>
+            <table class="table table-bordered mb-4">
+              <thead>
+                <th>A</th>
+                <th>B</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1. Good morning!</td>
+                  <td>a. I am fine, thank you. And you?</td>
+                </tr>
+                <tr>
+                  <td>2. How are you today?</td>
+                  <td>b. Goodbye!</td>
+                </tr>
+                <tr>
+                  <td>3. Hello, my name is Zahra.</td>
+                  <td>c. Good morning!</td>
+                </tr>
+                <tr>
+                  <td>4. See you tomorrow!</td>
+                  <td>d. Hello Zahra, nice to meet you!</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h4 style="color: #16A5EC">Kegiatan Belajar 3</h4>
+            <i class="mb-4">Pilihlah jawaban yang paling tepat!</i>
+            <ol class="mx-4" style="font-size: 18px">
+              <li>Apa yang kamu ucapkan saat bertemu teman di <strong>pagi hari</strong>?
+                <ol type="A">
+                  <li>Good afternoon</li>
+                  <li>Good morning</li>
+                  <li>Good night</li>
+                </ol>
+              </li>
+              <li>Bagaimana cara kamu <strong>menanyakan kabar seseorang</strong>?
+                <ol type="A">
+                  <li>What is your name?</li>
+                  <li>How are you today?</li>
+                  <li>Goodbye!</li>
+                </ol>
+              </li>
+              <li>Jika kamu merasa <strong>senang</strong>, kamu bisa mengatakan ...
+                <ol type="A">
+                  <li>I am tired!</li>
+                  <li>I am sad.</li>
+                  <li>I am happy!</li>
+                </ol>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Section untuk latihan -->
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+  <!-- Tambahkan di akhir body sebelum closing tag -->
+  <script>
+    window.addEventListener('load', function () {
+      // Sembunyikan preloader
+      const preloader = document.querySelector('.preloader');
+      document.body.classList.add('loaded');
+
+      setTimeout(function () {
+        preloader.classList.add('fade-out');
+
+        // Hapus preloader dari DOM setelah transisi
+        setTimeout(function () {
+          preloader.style.display = 'none';
+        }, 500);
+      }, 1000); // Waktu loading bisa disesuaikan
+    });
+  </script>
+</body>
+
+</html>

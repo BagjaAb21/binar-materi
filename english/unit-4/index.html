@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fun English Learning - Unit 4</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: all 0.5s ease;
+    }
+
+    .preloader.fade-out {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .loader {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 5px solid #3498db;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Sembunyikan konten saat loading */
+    body {
+      overflow: hidden;
+    }
+
+    body.loaded {
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<body style="margin-bottom: 2.5%;">
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+    <!-- Section Title -->
+    <section class="section-title">
+      <h2 style="text-align: center; font-size: calc(2rem + 0.9vw); margin-bottom: 2rem;">Do you like apple?</h2>
+      <p class="subtitle" style="font-size: 18px;">Berlatih lah membaca dialog di bawah ini bersama temanmu!</p>
+    </section>
+
+    <!-- Dialog Section 1-->
+    <section class="dialog-section">
+      <div class="row g-4">
+        <h3>Dialog 1</h3>
+        <!-- Left Column -->
+        <div class="col-md-6">
+          <div class="conversation-column">
+            <div class="chat-bubble chat-left" data-message="1">
+              <div class="message-content">
+                <p class="english">Do you like banana?</p>
+                <p class="indonesian">Apa kamu suka Pisang?</p>
+                <div class="audio-wrapper">
+                  <audio controls>
+                    <source src="audio/Do you like banana .mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+              </div>
+            </div>
+
+            <div class="character-wrapper">
+              <img src="assets/woman.png" alt="Queena" class="character-img">
+            </div>
+
+            <div class="chat-bubble chat-left" data-message="2">
+              <div class="message-content">
+                <p class="english">No, I do not like banana.</p>
+                <p class="indonesian">Tidak, saya tidak suka pisang</p>
+                <div class="audio-wrapper">
+                  <audio controls>
+                    <source src="audio/no idon t like banan.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+              </div>
+            </div>
+            <div class="character-wrapper">
+              <img src="assets/boy.png" style="margin-left: 0.3rem;" alt="Azzam" class="character-img">
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Right Column -->
+        <div class="col-md-6">
+          <div class="conversation-column">
+            <div class="chat-bubble chat-right" data-message="3">
+              <div class="message-content">
+                <p class="english"> What is your favorite fruit?</p>
+                <p class="indonesian">Apa buah kesukaanmu?</p>
+                <div class="audio-wrapper">
+                  <audio controls>
+                    <source src="audio/What is your favorit.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+              </div>
+            </div>
+
+            <div class="character-wrapper">
+              <img src="assets/woman.png" alt="Queena" class="character-img">
+            </div>
+
+            <div class="chat-bubble chat-right" data-message="4">
+              <div class="message-content">
+                <p class="english">I like mango and strawberry.</p>
+                <p class="indonesian">Saya suka mangga dan strawberry</p>
+                <div class="audio-wrapper">
+                  <audio controls>
+                    <source src="audio/I like mango and str.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+              </div>
+            </div>
+            <div class="character-wrapper">
+              <img src="assets/boy.png" style="margin-left: 0.3rem;" alt="Azzam" class="character-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Dialog Section 1-->
+
+    <!-- Dialog Section 2-->
+    <section class="dialog-section">
+      <div class="row g-4">
+        <h3>Dialog 2</h3>
+        <!-- Left Column -->
+        <div class="col-md-6">
+          <div class="conversation-column">
+            <div class="chat-bubble chat-left" data-message="1">
+              <div class="message-content">
+                <p class="english">Do you like grapes?</p>
+                <p class="indonesian">Apa kamu suka anggur?</p>
+                <div class="audio-wrapper">
+                  <audio controls>
+                    <source src="audio/Do you like grapes .mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+              </div>
+            </div>
+
+            <div class="character-wrapper">
+              <img src="assets/boy.png" alt="Queena" class="character-img">
+            </div>
+
+            <div class="chat-bubble chat-left" data-message="2">
+              <div class="message-content">
+                <p class="english"> Yes, I do. What about you?</p>
+                <p class="indonesian">Iya, saya suka. Kalau kamu?</p>
+                <div class="audio-wrapper">
+                  <audio controls>
+                    <source src="audio/Yes I do What about .mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+              </div>
+            </div>
+            <div class="character-wrapper">
+              <img src="assets/woman.png" style="margin-left: 0.3rem;" alt="Azzam" class="character-img">
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Right Column -->
+        <div class="col-md-6">
+          <div class="conversation-column">
+            <div class="chat-bubble chat-right" data-message="3">
+              <div class="message-content">
+                <p class="english"> I don't like grapes. I like watermelon.</p>
+                <p class="indonesian">Saya tidak suka anggur. Saya suka semangka.</p>
+                <div class="audio-wrapper">
+                  <audio controls>
+                    <source src="audio/I don t like grapes .mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+              </div>
+            </div>
+
+            <div class="character-wrapper">
+              <img src="assets/boy.png" alt="Queena" class="character-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Dialog Section 2-->
+
+    <!-- Daily Greetings Section -->
+    <div class="container my-5">
+      <!-- Section Title -->
+      <div class="section-title">
+        <h2 id="sapaan-sehari-hari" style="font-size: larger;">1. Buah-buahan (Fruits)</h2>
+      </div>
+
+      <!-- Greetings Grid -->
+      <div class="row g-4">
+        <!-- Apple Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/apple.png" class="greeting-img" alt="Morning scene with sunrise and tree">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Apple</h3>
+              <p class="indonesian">Apel</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Banana Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/banana_680935.png" class="greeting-img" alt="Afternoon scene with sun and tree">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Banana</h3>
+              <p class="indonesian">Pisang</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Orange Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/orange_2548631.png" class="greeting-img" alt="Evening scene with moon and tree">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Orange</h3>
+              <p class="indonesian">Jeruk</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- manggo Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/mango.png" class="greeting-img" alt="Night scene with sleeping person">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Manggo</h3>
+              <p class="indonesian">Mangga</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grape Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/grape.png" class="greeting-img" alt="Students saying goodbye">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Grape</h3>
+              <p class="indonesian">Anggur</p>
+            </div>
+          </div>
+        </div>
+
+        <!--  Pineapple Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/pineapple.png" class="greeting-img" alt="Parent and child saying see you tomorrow">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Pineapple</h3>
+              <p class="indonesian">Nanas</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pear Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/pear.png" class="greeting-img" alt="Parent and child saying see you tomorrow">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Pear</h3>
+              <p class="indonesian">Pir</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kiwi Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/kiwi.png" class="greeting-img" alt="Parent and child saying see you tomorrow">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Kiwi</h3>
+              <p class="indonesian">Kiwi</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dragon fruit Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/dragon-fruit.png" class="greeting-img" alt="Parent and child saying see you tomorrow">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Dragon Fruit</h3>
+              <p class="indonesian">Buah Naga</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Watermelon Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/watermelon.png" class="greeting-img" alt="Parent and child saying see you tomorrow">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Watermelon</h3>
+              <p class="indonesian">Semangka</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Papaya Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/papaya.png" class="greeting-img" alt="Parent and child saying see you tomorrow">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Papaya</h3>
+              <p class="indonesian">Pepaya</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stawberry Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/strawberry.png" class="greeting-img" alt="Parent and child saying see you tomorrow">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Strawberry</h3>
+              <p class="indonesian">Stroberi</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Peach Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/peach.png" class="greeting-img" alt="Parent and child saying see you tomorrow">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Peach</h3>
+              <p class="indonesian">Persik</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coconut Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/coconut.png" class="greeting-img" alt="Parent and child saying see you tomorrow">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Coconut</h3>
+              <p class="indonesian">Kelapa</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Avocado Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/avocado.png" class="greeting-img" alt="Parent and child saying see you tomorrow">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Avocado</h3>
+              <p class="indonesian">Alpukat</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cherry Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/cherries.png" class="greeting-img" alt="Parent and child saying see you tomorrow">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Cherry</h3>
+              <p class="indonesian">Ceri</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mangosteen Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/mangosteen.png" class="greeting-img" alt="Parent and child saying see you tomorrow">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Mangosteen</h3>
+              <p class="indonesian">Manggis</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Durian Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card h-100">
+            <div class="card-image-wrapper">
+              <img src="assets/durian.png" class="greeting-img" alt="Parent and child saying see you tomorrow">
+            </div>
+            <div class="greeting-text">
+              <h3 class="english">Durian</h3>
+              <p class="indonesian">Durian</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Section Table1 -->
+    <div class="container" style="margin-top: 2%;">
+      <h2 class="section-title">2. Subjek dalam bahasa Inggris (Subject Pronouns)</h2>
+      <div class="table-container">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th width="50%">Expressions</th>
+                <th width="50%">Responses</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <ul style="text-align: justify;">
+                    <li> Do you like apple? (Apakah kamu suka apel?) </li>
+                    <li> Does he/she like banana? (Apakah dia suka pisang?) </li>
+                    <li> What is your favorite fruit? (Apa buah kesukaanmu?) </li>
+                    <li> Do you like this apple? (Apakah kamu suka apel ini) </li>
+                    <li> Does he/she like that orange? (Apakah dia suka jeruk itu?) </li>
+                  </ul>
+                </td>
+                <td>
+                  <ul style="text-align: justify;">
+                    <li>Yes, I do. (Iya. saya suka)</li>
+                    <li>Yes, I like apple. (Iya, saya suka apel)</li>
+                    <li>No, I do not like banana. (Tidak, saya tidak suka pisang)</li>
+                    <li>My favorite fruit is . . . (Buah kesukaan saya adalah . . .)</li>
+                    <li>I like . . . (Saya suka . . .)</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- End Section Table1 -->
+    <!-- Section untuk latihan -->
+    <div class="container py-4 mb-4" style="margin-top: 2%;">
+      <!-- Section Title with Icon -->
+
+      <div class="card border-0 shadow-lg rounded-4 bg-white">
+        <div class="card-body p-4 p-lg-5">
+          <!-- Introduction List -->
+          <div class="row">
+            <h5 style="color: #16A5EC">Kegiatan Belajar 1</h5>
+            <i class="mb-4">Artikan kalimat di bawah menjadi bahasa Indonesia!</i>
+            <ol class="mx-4 mb-4" style="font-size: 18px">
+              <li>Do you like grapes? = __________</li>
+              <li>My sister likes avocado = __________</li>
+              <li>I do not like durian = __________</li>
+              <li>Do you like pineapple? = __________</li>
+              <li>They like this dragon fruit = __________</li>
+            </ol>
+
+            <h5 style="color: #16A5EC">Kegiatan Belajar 2</h5>
+            <i class="mb-4">Susun huruf acak berikut menjadi nama buah dalam bahasa Inggris!</i>
+            <ol class="mx-4 mb-4" style="font-size: 18px">
+              <li>e - c - p - h - a = ______ (persik)</li>
+              <li>o - n - a - g - m = ______ (mangga)</li>
+              <li>c - a - d - o - v - o - a = ______ (alpukat)</li>
+              <li>y - r - c - h - e - y = ______ (ceri)</li>
+              <li>p - a - r - g - e - s = ______ (anggur)</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Section untuk latihan -->
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+  <!-- Tambahkan di akhir body sebelum closing tag -->
+  <script>
+    window.addEventListener('load', function () {
+      // Sembunyikan preloader
+      const preloader = document.querySelector('.preloader');
+      document.body.classList.add('loaded');
+
+      setTimeout(function () {
+        preloader.classList.add('fade-out');
+
+        // Hapus preloader dari DOM setelah transisi
+        setTimeout(function () {
+          preloader.style.display = 'none';
+        }, 500);
+      }, 1000); // Waktu loading bisa disesuaikan
+    });
+  </script>
+</body>
+
+</html>

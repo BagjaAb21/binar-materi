@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilangan Bulat</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: all 0.5s ease;
+    }
+
+    .preloader.fade-out {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .loader {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 5px solid #3498db;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Sembunyikan konten saat loading */
+    body {
+      overflow: hidden;
+    }
+
+    body.loaded {
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<body style="margin-bottom: 2.5%;">
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <div class="integer-section">
+    <!-- Definition Card -->
+    <div class="definition-card">
+      <div class="definition-text">
+        <span class="red-text">Bilangan bulat</span> adalah <span class="red-text">bilangan</span> yang terdiri dari
+        <span class="red-text">angka yang utuh</span>, bukan pecahan maupun desimal.
+      </div>
+      <div class="examples-row">
+        <div class="number-item">
+          <div class="number">2</div>
+          <div class="circle-icon check">✓</div>
+        </div>
+        <div class="number-item">
+          <div class="number">½</div>
+          <div class="circle-icon cross">✗</div>
+        </div>
+        <div class="number-item">
+          <div class="number">0,2</div>
+          <div class="circle-icon cross">✗</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Number Line Card -->
+    <div class="number-line-card">
+      <div class="line-container">
+        <div class="section-labels">
+          <span class="section-label">NEGATIF</span>
+          <span class="section-label">NOL</span>
+          <span class="section-label">POSITIF</span>
+        </div>
+        <div class="line-base">
+          <div class="arrow arrow-left"></div>
+          <div class="arrow arrow-right"></div>
+        </div>
+        <div class="markers">
+          <div class="marker">
+            <div class="marker-line"></div>
+            <span class="marker-number">-4</span>
+          </div>
+          <div class="marker">
+            <div class="marker-line"></div>
+            <span class="marker-number">-3</span>
+          </div>
+          <div class="marker">
+            <div class="marker-line"></div>
+            <span class="marker-number">-2</span>
+          </div>
+          <div class="marker">
+            <div class="marker-line"></div>
+            <span class="marker-number">-1</span>
+          </div>
+          <div class="marker">
+            <div class="marker-line"></div>
+            <span class="marker-number">0</span>
+          </div>
+          <div class="marker">
+            <div class="marker-line"></div>
+            <span class="marker-number">1</span>
+          </div>
+          <div class="marker">
+            <div class="marker-line"></div>
+            <span class="marker-number">2</span>
+          </div>
+          <div class="marker">
+            <div class="marker-line"></div>
+            <span class="marker-number">3</span>
+          </div>
+          <div class="marker">
+            <div class="marker-line"></div>
+            <span class="marker-number">4</span>
+          </div>
+        </div>
+      </div>
+      <div class="line-title">Garis Bilangan Bulat</div>
+    </div>
+  </div>
+  <!-- end integer section -->
+
+  <div class="math-operations-container">
+    <table class="operation-table">
+      <!-- Tabel Perkalian -->
+      <tr>
+        <td>
+          <div class="yellow-box">
+            2 × 3 = 6
+            <br>(-1) × (-4) = 4
+            <br>2 × (-4) = (-8)
+            <br>(-2) × 3 = (-6)
+          </div>
+        </td>
+        <td>
+          <p class="explanation rata">
+            Contoh disamping merupakan penjelasan dari <strong>perkalian</strong> bilangan bulat.
+          </p>
+          <p class="explanation rata">
+            Kesimpulan:
+          <ol class="number-list">
+            <li>
+              Perkalian dua bilangan yang <span class="red-text">tandanya sama</span>, hasilnya <span
+                class="red-text">bilangan positif</span>.
+              <br>Contoh:
+              <br>(+) × (+) = (+)
+              <br>(-) × (-) = (+)
+            </li>
+            <li>
+              Perkalian dua bilangan yang <span class="red-text">berbeda tanda</span>, hasilnya <span
+                class="red-text">bilangan negatif</span>.
+              <br>Contoh:
+              <br>(+) × (-) = (-)
+              <br>(-) × (+) = (-)
+            </li>
+          </ol>
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Tabel Pembagian -->
+    <table class="operation-table mt-4">
+      <tr>
+        <td>
+          <div class="yellow-box">
+            <div class="division-section">
+              40
+              <br>40 : 8 = 5
+              <br>40 : 5 = 8
+            </div>
+            <div class="division-section mt-3">
+              (-36)
+              <br>(-36) : 6 = (-6)
+              <br>(-36) : (-6) = 6
+            </div>
+          </div>
+        </td>
+        <td>
+          <p class="explanation rata">
+            Contoh disamping merupakan penjelasan dari <strong>pembagian</strong> bilangan bulat.
+          </p>
+          <p class="explanation rata">
+            Kesimpulan:
+          <ol class="number-list">
+            <li>
+              Pembagian dua bilangan yang <span class="red-text">tandanya sama</span>, hasilnya <span
+                class="red-text">bilangan positif</span>.
+              <br>Contoh:
+              <br>(+) : (+) = (+)
+              <br>(-) : (-) = (+)
+            </li>
+            <li>
+              Pembagian dua bilangan yang <span class="red-text">berbeda tanda</span>, hasilnya <span
+                class="red-text">bilangan negatif</span>.
+              <br>Contoh:
+              <br>(+) : (-) = (-)
+              <br>(-) : (+) = (-)
+            </li>
+          </ol>
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Aturan Operasi -->
+    <div class="rules-section">
+      <h2 class="section-title">Aturan Operasi Hitung pada Bilangan Bulat</h2>
+      <ol class="rules-list">
+        <li>Operasi hitung bilangan dikerjakan secara urut mulai dari kiri.</li>
+        <li>Perkalian dan Pembagian dikerjakan sebelum Penjumlahan dan Pengurangan karena tingkatnya lebih tinggi.</li>
+        <li>Operasi hitung bilangan di dalam kurung diselesaikan terlebih dahulu.</li>
+      </ol>
+    </div>
+
+    <!-- Perkalian dan Pembagian -->
+    <div class="operations-section">
+      <h2 class="section-title">Operasi Hitung Perkalian dan Pembagian pada Bilangan Bulat</h2>
+
+      <!-- Perkalian -->
+      <div class="subsection">
+        <h3 class="subsection-title">1. Perkalian Bilangan Bulat</h3>
+
+        <div class="content-text rata">
+          <p>Pada hakikatnya perkalian pada dua buah bilangan bulat positif adalah penjumlahan yang berulang. Salah satu
+            kasus sederhana yaitu, terdapat lima buah keranjang, dimana setiap keranjang terdapat 3 butir telur. Berapa
+            banyak telur seluruhnya? Permasalahan tersebut dapat diilustrasikan seperti gambar di bawah ini.</p>
+        </div>
+
+        <div class="image-container">
+          <img src="assets/Picture11.png" alt="Ilustrasi perkalian bilangan bulat positif" class="math-image">
+          <p class="image-caption">Gambar 7 Ilustrasi perkalian bilangan bulat positif menggunakan himpunan</p>
+        </div>
+
+        <div class="content-text rata">
+          <p>Berdasarkan gambar 7 di atas, jumlah seluruh telur adalah 3 + 3 + 3 + 3 + 3=15, atau terdapat 5 kelompok
+            dengan anggota masing-masing 3 dilambangkandengan 5 × 3 = 15. Secara sederhana, dapat juga diilustrasikan
+            pada garis bilangan seperti berikut ini.</p>
+        </div>
+
+        <div class="image-container">
+          <img src="assets/Picture12.png" alt="Ilustrasi perkalian dengan garis bilangan" class="math-image">
+          <p class="image-caption">Gambar 8 Ilustrasi perkalian bilangan bulat positif menggunakan garis bilangan</p>
+        </div>
+
+        <div class="content-text rata">
+          <p>Gambar 8 di atas, menggambarkan 3 + 3 + 3 + 3 + 3 = 15 atau 5 × 3=15.</p>
+          <p>Berikutnya, perhatikan ilustrasi garis bilangan berikut ini.</p>
+        </div>
+
+        <div class="image-container">
+          <img src="assets/Picture13.png" alt="Ilustrasi Perkalian Bilangan Bulat Negatif" class="math-image">
+          <p class="image-caption">Gambar 9 Ilustrasi Perkalian Bilangan Bulat Negatif Menggunakan Garis Bilangan</p>
+        </div>
+
+        <div class="content-text rata">
+          <p>Garis bilangan pada gambar 9 tersebut menyatakan (-4) + (-4) + (-4) = 3 × (-4) = -12. Contoh yang lain
+            adalah menggunakan koin muatan, dimana koin berwarna merah memiliki nilai negatif. Pada setiap kelompok
+            terdapat 3 koin merah (3 koin bernilai negatif), dan terdapat 4 kelompok. Secara matematis ditulis (-3) +
+            (-3) + (-3) + (-3) = 4 × (-3) = -12.</p>
+        </div>
+
+        <div class="image-container">
+          <img src="assets/Picture14.png" alt="Ilustrasi perkalian bilangan negatif" class="math-image">
+          <p class="image-caption">Gambar 10 Ilustrasi perkalian bilangan bulat negatif menggunakan himpunan</p>
+        </div>
+
+        <div class="rules-box">
+          <p class="rules-title">Dari beberapa contoh tersebut dan contoh lain yang diatas, <span
+              class="red-text">diperoleh sebuah aturan</span> sebagai berikut.</p>
+          <ol class="rules-list">
+            <li>-a x b = -(a x b) atau (-) × (+) = (-), bilangan negatif × bilangan positif hasilnya bilangan negatif.
+            </li>
+            <li>a x -b = -(a x b) atau (+) × (-) = (-), bilangan positif × bilangan negatif hasilnya bilangan negatif.
+            </li>
+            <li>a x b = (a x b) atau (+) × (+) = (+), bilangan positif × bilangan positif hasilnya bilangan positif.
+            </li>
+            <li>-a x -b = (a x b) atau (-) × (-) = (+), bilangan negatif × bilangan negatif hasilnya bilangan positif.
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Pembagian -->
+      <div class="subsection">
+        <h3 class="subsection-title">2. Pembagian Bilangan Bulat</h3>
+
+        <div class="content-text rata">
+          <p>Pada hakikatnya operasi hitung pembagian pada dua buah bilangan bulat positif adalah pengurangan yang
+            berulang sampai nol. Definisi ini hanya berlaku saat bilangan yang dibagi habis dibagi oleh bilangan
+            pembagi. Perhatikan contoh kasus berikut ini. Berapakah 48 : 4?</p>
+          <p>Perhatikan ilustrasi penyelesaian berikut ini:</p>
+        </div>
+
+        <div class="image-container">
+          <img src="assets/Picture15.png" alt="Ilustrasi pembagian 48 : 4" class="math-image">
+          <p class="image-caption">Gambar 11 Ilustrasi pembagian 48 : 4</p>
+        </div>
+
+        <div class="content-text rata">
+          <p>Gambar 11 tersebut mengilustrasikan 48 memiliki nilai tempat puluhan 4 dan nilai satuan 8. Karena akan
+            dibagi pada 4 kelompok, maka setiap kelompok memiliki 1 puluhan, dan 2 satuan, atau dengan kata lain 48 : 4
+            = 12.</p>
+        </div>
+      </div>
+
+      <h2 class="section-title">Kegiatan Belajar</h2>
+      <ol style="text-align: justify;">
+        <li>15 x 3 =</li>
+        <li>- 13 x - 9 =</li>
+        <li>- 20 x 10 =</li>
+        <li>24 x - 5 =</li>
+        <li>27 : 3 =</li>
+        <li>- 20 : - 5 =</li>
+        <li>42 : (-7) =</li>
+        <li>- 64 : 8 =</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- Tambahkan di akhir body sebelum closing tag -->
+  <script>
+    window.addEventListener('load', function () {
+      // Sembunyikan preloader
+      const preloader = document.querySelector('.preloader');
+      document.body.classList.add('loaded');
+
+      setTimeout(function () {
+        preloader.classList.add('fade-out');
+
+        // Hapus preloader dari DOM setelah transisi
+        setTimeout(function () {
+          preloader.style.display = 'none';
+        }, 500);
+      }, 1000); // Waktu loading bisa disesuaikan
+    });
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

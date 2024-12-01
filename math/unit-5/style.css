@@ -1,0 +1,222 @@
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Header Section */
+.header-section {
+  padding: 20px 0;
+}
+
+.concept-card {
+  background-color: var(--primary-blue);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.concept-card img {
+  width: auto;
+  height: 180px;
+}
+
+.concept-title {
+  font-weight: bold;
+  color: #000;
+}
+
+.concept-divider {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  margin: 10px 0;
+}
+
+/* Main Title Section */
+.red-text {
+  color: red;
+  font-weight: bold;
+}
+
+.main-title {
+  background-color: var(--primary-blue);
+  padding: 30px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title-text {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle-box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 600px;
+  margin: 20px auto 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Illustration Section */
+.illustration-box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.square-box {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #000;
+  margin: 15px auto;
+}
+
+.square-divided {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #000;
+  margin: 15px auto;
+  display: flex;
+}
+
+.square-part {
+  flex: 1;
+  border-right: 2px solid #000;
+}
+
+.square-part:last-child {
+  border-right: none;
+}
+
+.square-part.filled {
+  background-color: #808080;
+}
+
+/* Pizza Section */
+.pizza-section {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.pizza-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.pizza-img {
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .title-text {
+    font-size: 2rem;
+  }
+
+  .square-box,
+  .square-divided {
+    width: 120px;
+    height: 120px;
+  }
+
+  .pizza-img {
+    width: 300px;
+    height: auto;
+  }
+}
+
+.method-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+  border: #000 solid 1px;
+}
+
+.method-description {
+  padding: 20px;
+  border-right: 1px solid #dee2e6;
+}
+
+.method-example {
+  background-color: var(--primary-blue);
+  padding: 20px;
+  color: black;
+}
+
+.fraction {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.fraction-line {
+  border-bottom: 2px solid black;
+  margin: 2px 0;
+}
+
+.set-container {
+  border: 2px solid #000;
+  padding: 15px;
+  margin: 10px 0;
+  display: inline-block;
+  background-color: #fff;
+}
+
+.set-label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+}
+
+.circle-filled {
+  background-color: blue;
+}
+
+.explanation-text {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .method-description {
+    border-right: none;
+    border-bottom: 1px solid #dee2e6;
+  }
+}
+
+.rata {
+  text-align: justify;
+}

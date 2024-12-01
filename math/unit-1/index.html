@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar Bilangan - unit-1</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: all 0.5s ease;
+    }
+
+    .preloader.fade-out {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .loader {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 5px solid #3498db;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Sembunyikan konten saat loading */
+    body {
+      overflow: hidden;
+    }
+
+    body.loaded {
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<body style="margin-bottom: 2.5%;">
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+  <div class="main-container">
+    <div class="title-section">
+      <h1 style="font-size: larger;">
+        Bilangan adalah suatu sebutan untuk menyatakan jumlah atau banyak.
+      </h1>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-9">
+        <div class="number-card">
+          <h2 class="card-title">Kartu-kartu bilangan dari 0-100</h2>
+          <div class="number-grid">
+            <!-- Baris 0-9 -->
+            <div class="number-cell">0</div>
+            <div class="number-cell">1</div>
+            <div class="number-cell">2</div>
+            <div class="number-cell">3</div>
+            <div class="number-cell">4</div>
+            <div class="number-cell">5</div>
+            <div class="number-cell">6</div>
+            <div class="number-cell">7</div>
+            <div class="number-cell">8</div>
+            <div class="number-cell">9</div>
+
+            <!-- Baris 10-19 -->
+            <div class="number-cell">10</div>
+            <div class="number-cell">11</div>
+            <div class="number-cell">12</div>
+            <div class="number-cell">13</div>
+            <div class="number-cell">14</div>
+            <div class="number-cell">15</div>
+            <div class="number-cell">16</div>
+            <div class="number-cell">17</div>
+            <div class="number-cell">18</div>
+            <div class="number-cell">19</div>
+
+            <!-- Baris 20-29 -->
+            <div class="number-cell">20</div>
+            <div class="number-cell">21</div>
+            <div class="number-cell">22</div>
+            <div class="number-cell">23</div>
+            <div class="number-cell">24</div>
+            <div class="number-cell">25</div>
+            <div class="number-cell">26</div>
+            <div class="number-cell">27</div>
+            <div class="number-cell">28</div>
+            <div class="number-cell">29</div>
+
+            <!-- Baris 30-39 -->
+            <div class="number-cell">30</div>
+            <div class="number-cell">31</div>
+            <div class="number-cell">32</div>
+            <div class="number-cell">33</div>
+            <div class="number-cell">34</div>
+            <div class="number-cell">35</div>
+            <div class="number-cell">36</div>
+            <div class="number-cell">37</div>
+            <div class="number-cell">38</div>
+            <div class="number-cell">39</div>
+
+            <!-- Baris 40-49 -->
+            <div class="number-cell">40</div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell">59</div>
+
+            <!-- Baris 60-69 -->
+            <div class="number-cell">61</div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell">65</div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell empty-cell"></div>
+
+            <!-- Baris 70-79 -->
+            <div class="number-cell">81</div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell">89</div>
+
+            <!-- Baris terakhir -->
+            <div class="number-cell">90</div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell">96</div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell">98</div>
+            <div class="number-cell empty-cell"></div>
+            <div class="number-cell">100</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="mascot-container">
+          <div class="mascot-item">
+            <img src="assets/wall-clock.png" alt="Jam" class="img-fluid">
+          </div>
+          <div class="mascot-item">
+            <img src="assets/book.png" alt="Buku dan Globe" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of bilangan  -->
+
+    <div class="examples-section" style="margin-top: 2rem;">
+      <h2 class="example-title">Contoh :</h2>
+
+      <table class="example-table">
+        <tbody>
+          <!-- Row 1: Balloon Addition Example -->
+          <tr>
+            <td width="50%">
+              <div class="example-image">
+                <img src="assets/Picture1.png" alt="Contoh penjumlahan dengan balon">
+              </div>
+              <!-- <div class="math-symbol">2 puluhan + 3 satuan = 23</div> -->
+              <div class="example-image">
+                <img src="assets/Picture2.png" alt="Dialog anak-anak">
+              </div>
+            </td>
+            <td width="50%">
+              <div class="explanation">
+                Gambar disamping merupakan penjelasan dari bilangan dan simbol bilangan.
+              </div>
+            </td>
+          </tr>
+
+          <!-- Row 2: Number Comparison Example -->
+          <tr>
+            <td>
+              <div class="comparison-box">
+                <h3 class="mb-3">Manakah bilangan yang lebih banyak nilainya?</h3>
+                <div class="comparison-numbers">
+                  A: 85 &nbsp;&nbsp; B: 90 ✓
+                </div>
+                <div class="mt-3 comparison-numbers2">
+                  90 > 85
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="explanation">
+                Gambar disamping menunjukkan bahwa bilangan B <span class="highlight">lebih besar</span> daripada
+                bilangan A.
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- end of table -->
+
+
+    <!-- Section untuk latihan -->
+    <div class="container py-4 mb-4" style="margin-top: 2%;">
+      <!-- Section Title with Icon -->
+
+      <div class="card border-0 shadow-lg rounded-4 bg-white">
+        <div class="card-body p-4 p-lg-5">
+          <!-- Introduction List -->
+          <div class="row">
+            <h5 style="color: #16A5EC">Kegiatan Belajar 1</h5>
+            <i class="mb-4">Ayo berlatih</i>
+            <ol class="mx-4 mb-4" style="font-size: 18px">
+              <li>6 puluhan dan 3 satuan sama dengan ...</li>
+              <li>8 puluhan sama dengan ...</li>
+              <li>9 di tempat puluhan dan 6 di tempat satuan sama dengan ...</li>
+              <li>5 puluhan ditambah 2 satuan dama dengan ...</li>
+            </ol>
+
+            <h5 style="color: #16A5EC">Kegiatan Belajar 2</h5>
+            <i class="mb-4">Berilah tanda yang tepat pada 2 bilangan di bawah ini '<' untuk kurang dari, dan '>' untuk
+                lebih dari</i>
+                <ol class="mx-4 mb-4" style="font-size: 18px">
+                  <li>38 __ 35</li>
+                  <li>66 __ 88</li>
+                  <li>45 __ 40</i></li>
+            <li>95 __ 100</i></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Section untuk latihan -->
+  </div>
+
+  <!-- Tambahkan di akhir body sebelum closing tag -->
+  <script>
+    window.addEventListener('load', function () {
+      // Sembunyikan preloader
+      const preloader = document.querySelector('.preloader');
+      document.body.classList.add('loaded');
+
+      setTimeout(function () {
+        preloader.classList.add('fade-out');
+
+        // Hapus preloader dari DOM setelah transisi
+        setTimeout(function () {
+          preloader.style.display = 'none';
+        }, 500);
+      }, 1000); // Waktu loading bisa disesuaikan
+    });
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

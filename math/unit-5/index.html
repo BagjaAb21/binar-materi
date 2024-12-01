@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pecahan Senilai</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: all 0.5s ease;
+    }
+
+    .preloader.fade-out {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .loader {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 5px solid #3498db;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Sembunyikan konten saat loading */
+    body {
+      overflow: hidden;
+    }
+
+    body.loaded {
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<body style="margin-bottom: 2.5%;">
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Header Section with Concepts -->
+  <div class="header-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="concept-card">
+            <img src="assets/Picture16.png" alt="Ilustrasi Pizza" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="concept-card">
+            <img src="assets/Picture17.png" alt="Ilustrasi Pizza" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Title Section -->
+  <div class="main-title">
+    <div class="container">
+      <h1 class="title-text">PECAHAN SENILAI</h1>
+      <div class="subtitle-box">
+        <p class="mb-0">Pecahan yang memiliki <span class="red-text">nilai yang sama</span> tetapi dituliskan dalam
+          bilangan yang berbeda</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content Section -->
+  <div class="container mt-4">
+    <div class="illustration-box">
+      <p class="section-title rata">
+        Konsep bilangan pecahan dapat dihubungkan dengan konsep besar (luas), panjang, maupun himpunan.
+        Perhatikan ilustrasi berikut. Gambar yang mewakili bilangan 1 dan gambar yang mewakili bilangan ¼ sebagai
+        berikut
+      </p>
+
+      <div class="row text-center">
+        <div class="col-md-6">
+          <div class="square-box"></div>
+          <p>Luas daerah keseluruhan mewakili bilangan 1</p>
+        </div>
+        <div class="col-md-6">
+          <div class="square-divided">
+            <div class="square-part"></div>
+            <div class="square-part"></div>
+            <div class="square-part"></div>
+            <div class="square-part filled"></div>
+          </div>
+          <p>Luas daerah yang diarsir mewakili bilangan ¼</p>
+        </div>
+      </div>
+      <p class="text-center mt-3">Gambar 12 ilustrasi bilangan 1 dan ¼</p>
+    </div>
+
+    <!-- Pizza Illustration Section -->
+    <div class="pizza-section">
+      <div class="pizza-container">
+        <img src="assets/Picture18.png" alt="Pizza Pecahan 1/4 = 2/8" class="pizza-img">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Cara Menentukan Pecahan Senilai -->
+    <div class="row mb-4">
+      <!-- Metode Pembagian -->
+      <div class="col-12 mb-4">
+        <div class="method-card">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <div class="method-description">
+                <h5 class="rata">Cara menentukan pecahan senilai dengan membagi pembilang dan penyebut dengan bilangan
+                  yang sama</h5>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="method-example">
+                <div class="d-flex flex-wrap justify-content-around align-items-center">
+                  <div>
+                    <img src="assets/Picture19.png" alt="4/8 = 1/2">
+                  </div>
+                  <div>
+                    <div>
+                      <img src="assets/Picture20.png" alt="4/8 = 1/2">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Metode Perkalian -->
+      <div class="col-12 mb-4">
+        <div class="method-card">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <div class="method-description">
+                <h5 class="rata">Cara menentukan pecahan senilai dengan mengalikan pembilang dan penyebut dengan
+                  bilangan yang sama
+                </h5>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="method-example">
+                <div class="d-flex flex-wrap justify-content-around align-items-center">
+                  <div>
+                    <div>
+                      <img src="assets/Picture21.png" alt="4/8 = 1/2">
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <img src="assets/Picture22.png" alt="4/8 = 1/2">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ilustrasi Himpunan -->
+    <div class="mt-4">
+      <p class="explanation-text mb-4 rata" style="font-size: larger;">
+        Bilangan pecahan dapat diilustrasikan sebagai perbandingan himpunan bagian yang sama dari suatu himpunan
+        terhadap keseluruhan himpunan semula. Berikut gambar himpunan sebagai contoh.
+      </p>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="method-card">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <div class="p-4 text-center">
+                  <div class="set-container mb-3">
+                    <div class="set-label">A</div>
+                    <div>
+                      <span class="circle"></span>
+                      <span class="circle"></span>
+                      <span class="circle"></span>
+                      <span class="circle"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-4">
+                  <p>Banyak anggota himpunan A adalah 4.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 mt-3">
+          <div class="method-card">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <div class="p-4 text-center">
+                  <div class="set-container">
+                    <div class="set-label">A</div>
+                    <div>
+                      <span class="circle circle-filled"></span>
+                      <span class="circle"></span>
+                      <span class="circle"></span>
+                      <span class="circle"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-4">
+                  <p class="rata">Jika himpunan A dibagi menjadi himpunan-himpunan bagian yang sama, maka setiap
+                    himpunan bagian
+                    mempunyai satu anggota dan dibandingkan dengan himpunan A adalah ¼</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Kegiatan Belajar</h2>
+    <ol style="font-size: larger;">
+      <li>
+        1/3 =
+      </li>
+      <li>
+        8/16 =
+      </li>
+      <li>
+        4/3 =
+      </li>
+      <li>
+        3/9 =
+      </li>
+      <li>
+        2/7 =
+      </li>
+      <li>
+        9/27 =
+      </li>
+    </ol>
+  </div>
+  <!-- Tambahkan di akhir body sebelum closing tag -->
+  <script>
+    window.addEventListener('load', function () {
+      // Sembunyikan preloader
+      const preloader = document.querySelector('.preloader');
+      document.body.classList.add('loaded');
+
+      setTimeout(function () {
+        preloader.classList.add('fade-out');
+
+        // Hapus preloader dari DOM setelah transisi
+        setTimeout(function () {
+          preloader.style.display = 'none';
+        }, 500);
+      }, 1000); // Waktu loading bisa disesuaikan
+    });
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

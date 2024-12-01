@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilangan Bulat</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: all 0.5s ease;
+    }
+
+    .preloader.fade-out {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .loader {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 5px solid #3498db;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Sembunyikan konten saat loading */
+    body {
+      overflow: hidden;
+    }
+
+    body.loaded {
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<body style="margin-bottom: 2.5%;">
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <div class="integer-section">
+    <!-- Definition Card -->
+    <div class="definition-card">
+      <div class="definition-text">
+        <span class="red-text">Bilangan bulat</span> adalah <span class="red-text">bilangan</span> yang terdiri dari
+        <span class="red-text">angka yang utuh</span>, bukan pecahan maupun desimal.
+      </div>
+      <div class="examples-row">
+        <div class="number-item">
+          <div class="number">2</div>
+          <div class="circle-icon check">✓</div>
+        </div>
+        <div class="number-item">
+          <div class="number">½</div>
+          <div class="circle-icon cross">✗</div>
+        </div>
+        <div class="number-item">
+          <div class="number">0,2</div>
+          <div class="circle-icon cross">✗</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Number Line Card -->
+    <div class="number-line-card">
+      <div class="line-container">
+        <div class="section-labels">
+          <span class="section-label">NEGATIF</span>
+          <span class="section-label">NOL</span>
+          <span class="section-label">POSITIF</span>
+        </div>
+        <div class="line-base">
+          <div class="arrow arrow-left"></div>
+          <div class="arrow arrow-right"></div>
+        </div>
+        <div class="markers">
+          <div class="marker">
+            <div class="marker-line"></div>
+            <span class="marker-number">-4</span>
+          </div>
+          <div class="marker">
+            <div class="marker-line"></div>
+            <span class="marker-number">-3</span>
+          </div>
+          <div class="marker">
+            <div class="marker-line"></div>
+            <span class="marker-number">-2</span>
+          </div>
+          <div class="marker">
+            <div class="marker-line"></div>
+            <span class="marker-number">-1</span>
+          </div>
+          <div class="marker">
+            <div class="marker-line"></div>
+            <span class="marker-number">0</span>
+          </div>
+          <div class="marker">
+            <div class="marker-line"></div>
+            <span class="marker-number">1</span>
+          </div>
+          <div class="marker">
+            <div class="marker-line"></div>
+            <span class="marker-number">2</span>
+          </div>
+          <div class="marker">
+            <div class="marker-line"></div>
+            <span class="marker-number">3</span>
+          </div>
+          <div class="marker">
+            <div class="marker-line"></div>
+            <span class="marker-number">4</span>
+          </div>
+        </div>
+      </div>
+      <div class="line-title">Garis Bilangan Bulat</div>
+    </div>
+  </div>
+
+  <!-- end integer section -->
+
+  <div class="math-operations-container">
+    <div class="table-responsive">
+      <table class="operation-table">
+        <tbody>
+          <!-- First Row -->
+          <tr>
+            <td>
+              <div class="operation-label">-5 + 6 = 1</div>
+              <div class="number-line-container">
+                <img src="assets/Picture3.png" alt="Garis bilangan menunjukkan operasi -5 + 6 = 1"
+                  class="number-line-image">
+              </div>
+            </td>
+            <td>
+              <p class="explanation">
+                Gambar disamping merupakan penjelasan dari
+                <strong>penjumlahan</strong> bilangan bulat.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Second Row -->
+          <tr>
+            <td>
+              <div class="operation-label">-4 - 7 = -11</div>
+              <div class="number-line-container">
+                <img src="assets/Picture4.png" alt="Garis bilangan menunjukkan operasi -4 - 7 = -11"
+                  class="number-line-image">
+              </div>
+            </td>
+            <td>
+              <p class="explanation">
+                Gambar disamping merupakan penjelasan dari
+                <strong>pengurangan</strong> bilangan bulat.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Third Row -->
+          <tr>
+            <td>
+              <h3>Kesimpulan</h3>
+            </td>
+            <td>
+              <div class="formula-box">a + (-b) = a - b</div>
+              <div class="formula-box">a - (-b) = a + b</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- end of table -->
+
+  <div class="math-section">
+    <!-- Aturan Operasi -->
+    <div class="rules-container">
+      <h2 class="section-title">Aturan Operasi Hitung pada Bilangan Bulat</h2>
+      <ol class="rules-list">
+        <li>Operasi hitung bilangan dikerjakan secara urut mulai dari kiri.</li>
+        <li>Perkalian dan Pembagian dikerjakan sebelum Penjumlahan dan Pengurangan karena tingkatnya lebih tinggi.</li>
+        <li>Operasi hitung bilangan di dalam kurung diselesaikan terlebih dahulu.</li>
+      </ol>
+    </div>
+
+    <!-- Penjumlahan Bilangan Bulat -->
+    <div class="rules-container">
+      <h2 class="section-title">Operasi Hitung Penjumlahan dan Pengurangan pada Bilangan Bulat</h2>
+
+      <div class="addition-example">
+        <h3 class="subsection-title">1. Penjumlahan Bilangan Bulat</h3>
+        <p>Perhatikan ilustrasi gambar berikut ini.</p>
+
+        <div class="illustration-container">
+          <img src="assets/Picture5.png" alt="Ilustrasi Penjumlahan Bilangan Bulat" class="illustration-image">
+          <p>Gambar 1 Ilustrasi Penjumlahan Bilangan Bulat</p>
+        </div>
+
+        <div class="explanation" style="text-align: justify;">
+          <div class="explanation-title">Penjelasan :</div>
+          <p><span class="red-text">Pada gambar 1 (a)</span> yang mengilustrasikan operasi penjumlahan 3 + 2,
+            berdasarkan gambar tersebut terlihat bahwa pada satu himpunan terdapat 3 anggota dan himpunan yang lain
+            terdapat 2 anggota, sehingga gabungan dari dua himpunan tersebut adalah 5 anggota.</p>
+
+          <p><span class="red-text">Pada Gambar 1 (b)</span> mengilustrasikan 32 + 51, dimana nilai tempat puluhan
+            diwakili oleh stik dan nilai tempat satuan diwakili oleh koin hitam. Pada ilustrasi tersebut memperlihatkan
+            bahwa untuk menjumlahkan, maka jumlahkanlah sesuai dengan nilai tempat yang sama, yaitu nilai tempat puluhan
+            dengan puluhan (30 +50) dan nilai tempat satuan dengan nilai tempat satuan (2 + 1), sehingga hasil akhirnya
+            adalah 83.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="illustration-container">
+      <img src="assets/Picture5.png" alt="Gambar 2 Ilustrasi Penjumlahan Bilangan Bulat" class="illustration-image">
+      <p class="caption">
+        Gambar 2 Ilustrasi Penjumlahan Bilangan Bulat Positif dengan Positif, Negatif dengan Negatif dan Positif dengan
+        Negatif
+      </p>
+    </div>
+
+    <!-- Explanation -->
+    <div class="explanation" style="text-align: justify;">
+      <p>Perhatikan Gambar 2 yang mengilustrasikan penjumlahan bilangan bulat positif dengan positif, penjumlahan
+        bilangan bulat negatif dengan bilangan bulat negatif, dan penjumlahan bilangan positif dengan bilangan bulat
+        negatif dengan menggunakan media konkret. Media konkret yang digunakan adalah gambar koin berwarna hitam dan
+        putih. Dari gambar 2 tersebut, dapat ditunjukkan atau digambarkan sebagai berikut.</p>
+
+      <div class="explanation-title">Penjelasan :</div>
+      <div class="explanation-item">
+        <p>(1) <span class="red-text">Gambar 2 (a)</span> mengilustrasikan 3 koin hitam digabungkan dengan 1 koin hitam
+          sehingga menjadi 4 koin hitam, atau 3 + 1 = 4.</p>
+      </div>
+      <div class="explanation-item">
+        <p>(2) <span class="red-text">Gambar 2 (b)</span> mengilustrasikan 2 koin putih atau dan digabungkan dengan 1
+          koin putih sehingga menjadi 3 koin merah, atau (-2) + (-1) = (-3).</p>
+      </div>
+      <div class="explanation-item">
+        <p>(3) <span class="red-text">Gambar 2 (c)</span> mengilustrasikan 4 koin putih digabungkan dengan 3 koin hitam
+          (ketentuan menyebutkan bahwa pada saat koin berbeda warna digabungkan akan bernilai 0), sehingga hanya
+          menyisakan 1 koin putih, atau(-4) + 3 = -1.</p>
+      </div>
+
+      <div class="final-note">
+        Pada penjumlahan bilangan bulat dapat diilustrasikan sebagai perpindahan sepanjang garis bilangan. Suatu
+        bilangan bulat positif menggambarkan gerakan ke arah kanan, sedangkan bilangan bulat negatif menggambarkan
+        gerakan kearah kiri. Operasi hitung penjumlahan diilustrasikan dengan langkah maju dan operasi hitung
+        pengurangan diilustrasikan dengan langkah mundur.
+      </div>
+    </div>
+
+    <div class="number-line-section">
+      <div class="image-container">
+        <img src="assets/Picture6.png" alt="Ilustrasi penjumlahan bilangan menggunakan garis bilangan"
+          class="number-line-image">
+        <p class="image-caption">Gambar 3 Ilustrasi penjumlahan bilangan menggunakan garis bilangan</p>
+      </div>
+
+      <div class="explanation-container">
+        <div class="explanation-title">Penjelasan :</div>
+        <ol class="explanation-list" style="text-align: justify;">
+          <li class="explanation-item">
+            (1) <span class="red-text">Gambar 3 (a)</span> mengilustrasikan 3 + 1, maka dari titik 0 akan bergerak ke
+            arah kanan 3 langkah, kemudian bergerak maju lagi ke arah kanan 1 langkah, sehingga akan berakhir di titik
+            4, atau 3 + 1 = 4.
+          </li>
+          <li class="explanation-item">
+            (2) <span class="red-text">Gambar 3 (b)</span> mengilustrasikan (-2) + (-1), dari titik 0 akan bergerak maju
+            ke arah kiri 2 langkah, kemudian bergerak maju lagi (tetap ke arah kiri) 1 langkah, sehingga akan berakhir
+            di titik -3, atau (-2) + (-1) = -3.
+          </li>
+          <li class="explanation-item">
+            (3) <span class="red-text">Gambar 3 (c)</span> untuk mengilustrasikan 3 + (-4), dari titik 0 bergerak maju
+            ke arah kanan 3 langkah kemudian bergerak maju ke arah kiri (berbalik arah) sebanyak 4 langkah, sehingga
+            akan berakhir di titik -1, atau 3 + (-4) = -1.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- End of Penjumlahan Bilangan Bulat -->
+
+  <div class="subtraction-section">
+    <div class="content-container">
+      <h2 class="section-title">2. Pengurangan Bilangan Bulat</h2>
+      <p class="instruction">Perhatikan ilustrasi Gambar berikut ini.</p>
+
+      <!-- Gambar 4 -->
+      <div class="image-container">
+        <img src="assets/Picture7.png" alt="Ilustrasi pengurangan bilangan bulat positif" class="math-image">
+        <p class="caption">Gambar 4 Ilustrasi pengurangan bilangan bulat positif</p>
+      </div>
+
+      <p class="explanation">
+        Gambar 4, mengilustrasikan 5 – 2 = 3. Dengan menggunakan garis bilangan(perlu diperhatikan aturan yang telah
+        disepakati pada operasi hitung penjumlahan) berlaku, suatu bilangan bulat positif menggambarkan gerakan kearah
+        kanan, sedangkan bilangan bulat negatif menggambarkan gerakan kearah kiri, dan operasi hitung pengurangan
+        diilustrasikan dengan langkah mundur. Untuk mengilustrasikan 5 – 2, dari titik 0, bergerak maju sebanyak 5
+        langkah ketitik 5, kemudian mundur 2 langkah, sehingga berakhir di titik 3, atau 5 – 2 =3.
+      </p>
+
+      <!-- Gambar 5 -->
+      <div class="image-container">
+        <img src="assets/Picture8.png" alt="Ilustrasi pengurangan bilangan melibatkan nilai tempat" class="math-image">
+        <p class="caption">Gambar 5 Ilustrasi pengurangan bilangan melibatkan nilai tempat</p>
+      </div>
+
+      <p class="explanation rata">
+        Gambar 5 di atas mengilustrasikan pengurangan 53 – 29. Satu ikat lidi yang terdiri dari 10 lidi melambangkan
+        nilai tempat puluhan, dan satu lidi melambangkan nilai tempat satuan. Untuk mengilustrasikan 53 – 29, maka
+        terdapat 5 ikat lidi puluhan dan 3 lidi satuan, dari kumpulan lidi tersebut akan diminta 2 ikat lidi puluhan dan
+        9 lidi satuan. Untuk memudahkan, 1 ikat lidi satuan akan dipecah menjadi 10 lidi satuan, sehingga menjadi 4 ikat
+        lidi puluhan dan 13 lidi satuan. Setelah diminta maka akan tersisa 2 ikat lidi puluhan dan 4 lidi satuan atau 53
+        – 29 = 24.
+      </p>
+
+      <!-- Gambar 6 -->
+      <div class="image-container rata">
+        <img src="assets/Picture9.png" alt="Ilustrasi pengurangan bilangan bulat" class="math-image">
+        <p class="caption">Gambar 6 Ilustrasi pengurangan bilangan bulat</p>
+      </div>
+
+      <p class="explanation rata">
+        Pada Gambar 6 di atas, bilangan bulat positif diwakili oleh koin berwarna hitam, dan bilangan negatif diwakili
+        oleh koin berwarna putih.
+      </p>
+
+      <p class="explanation rata">
+        <span class="red-text">Gambar 6 (a)</span> mengilustrasikan terdapat 6 koin hitam kemudian akan diambil 2 koin
+        hitam, sehingga sisanya adalah 4 koin hitam, atau 6 – 2 = 4.
+      </p>
+
+      <p class="explanation rata">
+        <span class="red-text">Gambar 6 (b)</span> mengilustrasikan terdapat 4 koin putih kemudian akan diambil 1 koin
+        putih, sehingga sisanya adalah 3 koin putih, atau (-4) – (-1) = (-3).
+      </p>
+
+      <div class="conclusion rata">
+        Dari contoh diatas, dapat disimpulkan bahwa: a - b = a + (-b) dan a – (-b) = a + b. Jadi, operasi hitung
+        pengurangan berlaku definisi, misalkan a dan b bilangan bulat, maka a – b adalah sebuah bilangan bulat c yang
+        bersifat b + c = a. Dapat disimpulkan bahwa a – b = c jika dan hanya jika a = b + c. Jika a dan b bilangan
+        bulat, maka a – b = a + (-b).
+      </div>
+    </div>
+
+    <h2 class="section-title">Kegiatan Belajar</h2>
+    <ol style="text-align: justify;">
+      <li>Andi memiliki 25 kelereng dan Laras memiliki 79 kelereng, berapakah jumlah kelereng semuanya?</li>
+      <li>17 + (-9) =</li>
+      <li>-13 + 6 =</li>
+      <li>Ibu memiliki 30 buah Apel, kemudian 15 Apel diminta oleh Paman, berapakah jumlah Apel ibu sekarang?</li>
+      <li>- 23 - 14 =</li>
+      <li>57 - 73 =</li>
+      <li>375 - 248 =</li>
+    </ol>
+  </div>
+
+
+  <!-- Tambahkan di akhir body sebelum closing tag -->
+  <script>
+    window.addEventListener('load', function () {
+      // Sembunyikan preloader
+      const preloader = document.querySelector('.preloader');
+      document.body.classList.add('loaded');
+
+      setTimeout(function () {
+        preloader.classList.add('fade-out');
+
+        // Hapus preloader dari DOM setelah transisi
+        setTimeout(function () {
+          preloader.style.display = 'none';
+        }, 500);
+      }, 1000); // Waktu loading bisa disesuaikan
+    });
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

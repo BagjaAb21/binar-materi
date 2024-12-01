@@ -1,0 +1,62 @@
+body {
+  background-color: #f8f9fa;
+  font-family: "Arial", sans-serif;
+  padding: 20px;
+}
+.shape-container {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.shape-container:hover {
+  transform: scale(1.05);
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #ff4b91;
+}
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #ff8b3d;
+}
+.rectangle {
+  width: 150px;
+  height: 80px;
+  background-color: #65b741;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #3887be;
+  border-radius: 50%;
+}
+
+.parallelogram {
+  width: 120px;
+  height: 60px;
+  transform: skew(-20deg);
+  background-color: #f34d4d;
+}
+.hero {
+  color: rgb(0, 0, 0);
+}
+.feature-card {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.rata {
+  text-align: justify;
+}

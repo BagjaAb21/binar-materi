@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Penjumlahan Pecahan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: all 0.5s ease;
+    }
+
+    .preloader.fade-out {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .loader {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 5px solid #3498db;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Sembunyikan konten saat loading */
+    body {
+      overflow: hidden;
+    }
+
+    body.loaded {
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<body style="margin-bottom: 2.5%;">
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <div class="container py-4">
+    <div class="math-content">
+      <p>Pada penjumlahan pecahan dibahas tentang penjumlahan pecahan berpenyebut sama dan penjumlahan pecahan
+        berpenyebut berbeda.</p>
+
+      <div class="ms-4 mt-4">
+        <h3 class="mb-3">a. Penjumlahan Pecahan Berpenyebut Sama</h3>
+        <p>Perhatikan soal berikut:</p>
+        <p>Hasil penjumlahan ⅕ + ⅖ = ...</p>
+
+        <p>Untuk mencari hasil penjumlahan itu, kita dapat menggunakan bangun datar yang tampak seperti gambar
+          berikut.
+        </p>
+
+        <div class="text-center">
+          <figure class="figure">
+            <img src="assets/Picture1.png" alt="Ilustrasi Penjumlahan Bilangan Pecahan Berpenyebut Sama"
+              class="figure-img img-fluid rounded">
+            <figcaption>Gambar 13</figcaption>
+          </figure>
+        </div>
+
+        <p class="rata">Pada Gambar 13 tersebut nampak jelas luas bagian yang diarsir sama. Karena Luas bagiannya telah
+          sama, maka
+          kita dapat menggabungkan bagian-bagian yang diarsir, sehingga dari gambar diatas, nampak bahwa ⅕ + ⅖ = ⅗</p>
+
+        <p class="rata">Penyelesaian dengan algoritma, masalah di atas dapat diselesaikan sebagai berikut: ⅕ + ⅖ =
+          (1+2)/5 = ⅗ atau
+          dengan kata lain: a/c + b/c = (a+b)/c</p>
+      </div>
+
+      <div class="ms-4 mt-4">
+        <h3 class="mb-3">b. Pengurangan Bilangan Pecahan</h3>
+        <p>Perhatikan soal berikut!</p>
+        <p>Hasil pengurangan 4/7 − 3/7 = ...</p>
+
+        <p>Untuk mencari hasil pengurangan itu, kita dapat menggunakan bantuan bangun datar yang tampak seperti
+          berikut.
+        </p>
+
+        <div class="text-center">
+          <figure class="figure">
+            <img src="assets/Picture2.png" alt="Ilustrasi Penjumlahan Bilangan Pecahan Berpenyebut Sama"
+              class="figure-img img-fluid rounded">
+            <figcaption>Gambar 14</figcaption>
+          </figure>
+        </div>
+
+        <p class="rata">Gambar 14 Ilustrasi Pengurangan Bilangan Pecahan Berpenyebut Sama Seperti halnya pada konsep
+          penjumlahan, pada pengurangan bilangan pecahan berpenyebut sama, besar arsirannya sama, sehingga kita dapat
+          mengambil 3/7 dari 4/7 bagian yang tersedia, sehingga berdasarkan gambar 7 di atas, tampak bahwa 4/7 − 3/7 =
+          1/7. Penyelesaian dengan = (4−5) / 7 = 1/7 atau dengan kata lain: a/c − b/c = (a−b) / c</p>
+      </div>
+
+      <div class="ms-4 mt-4">
+        <h3 class="mb-3">c. Perkalian Bilangan Pecahan</h3>
+        <p class="rata">Seperti pada perkalian bilangan asli, perkalian bilangan asli dengan
+          bilangan pecahan dapat dijabarkan seperti contoh berikut.</p>
+        <p style="text-align: center; font-size: x-large;">
+          3 ×¼=¼+¼+¼=¾ <br>
+          6 ×½=½+½+½+½+½+½=6/2=3</p>
+
+        <p class="rata">Pada contoh perkalian bilangan asli dengan bilangan pecahan maka
+          kita dapat merubahnya menjadi penjumlahan berulang seperti pada
+          perkalian bilangan asli. Nah, bagaimana dengan perkalian dua bilangan
+          pecahan?
+          Perhatikan contoh kasus berikut ini: “Ibu memiliki ⅓ bagian kue,
+          kemudian adik meminta ½ bagian kue yang dimiliki ibu, berapa bagian
+          kue yang diminta adik? ”Ilustrasi cerita tersebut ditunjukkan seperti
+          gambar berikut ini.
+        </p>
+
+        <div class="text-center">
+          <figure class="figure">
+            <img src="assets/Picture3.png" alt="Ilustrasi Penjumlahan Bilangan Pecahan Berpenyebut Sama"
+              class="figure-img img-fluid rounded">
+            <figcaption>Gambar 15</figcaption>
+          </figure>
+        </div>
+
+        <p class="rata">Gambar 15 Ilustrasi Gambaran dari Soal Cerita
+          Dari gambar tersebut terlihat bahwa adik sekarang memiliki ½ bagian
+          dari ⅓ bagian kue atau senilai dengan ⅙ bagian kue. Secara matematis
+          hal tersebut menggambarkan ½ × ⅓ = ⅙</p>
+      </div>
+      <p>Perhatikan contoh selanjutnya!</p>
+      <div class="fraction-illustration">
+        <div class="row">
+          <div class="text-center">
+            <figure class="figure">
+              <img src="assets/Picture4.png" alt="Ilustrasi Penjumlahan Bilangan Pecahan Berpenyebut Sama"
+                class="figure-img img-fluid rounded">
+            </figure>
+          </div>
+          <div class="col-md-8">
+            <p>Gambar tersebut mengilustrasikan ⅓ × 5/7. Ilustrasi gambar tersebut adalah sebagai berikut:</p>
+            <p>Misalkan Ani memiliki kertas yang diarsir 5/7 bagian dan ⅓ bagian dari kertas milik Ani diminta oleh
+              Dini, berapa bagian kertas yang diminta Dini?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="fraction-illustration">
+        <div class="row align-items-center">
+          <div class="text-center">
+            <figure class="figure">
+              <img src="assets/Picture5.png" alt="Ilustrasi Penjumlahan Bilangan Pecahan Berpenyebut Sama"
+                class="figure-img img-fluid rounded">
+              <figcaption>Gambar 16 Ilustrasi Perkalian Bilangan Pecahan Biasa</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-8">
+            <p>Besar bagian yang diminta adalah ⅓ bagian dari 5/7 bagian atau ⅓ × 5/7</p>
+          </div>
+        </div>
+        <div class="figure-caption">Gambar 16 Ilustrasi Perkalian Bilangan Pecahan Biasa</div>
+      </div>
+
+      <h3 class="mt-4">d. Pembagian Bilangan Pecahan</h3>
+      <p>Terdapat contoh kasus, yaitu ½ : 2 = ...</p>
+      <p>Permasalahan tersebut tidak dapat diselesaikan seperti pada pembagian bilangan asli. Perhatikan ilustrasi
+        gambar berikut ini.</p>
+
+      <div class="example-box">
+        <div class="text-center">
+          <figure class="figure">
+            <img src="assets/Picture6.png" alt="Ilustrasi Penjumlahan Bilangan Pecahan Berpenyebut Sama"
+              class="figure-img img-fluid rounded">
+            <figcaption>Gambar 17</figcaption>
+          </figure>
+        </div>
+        <div class="figure-caption">Gambar 17 Ilustrasi Pembagian Bilangan Pecahan dengan Bulat</div>
+      </div>
+
+      <p>Dengan demikian ⅓ : 2 = ⅙</p>
+      <p>Contoh kasus yang lain yaitu hasil pembagian 1 : ⅓ = . . .</p>
+      <p>Untuk menyelesaikan permasalahan itu dapat digunakan definisi sebagai berikut:</p>
+
+      <div class="example-box" style="text-align: center;">
+        <p class="mb-0">a : b = n jika dan hanya jika n x b = a</p>
+      </div>
+
+      <p class="rata">Melalui definisi tersebut, mari kita coba menyelesaikan masalah berikut ini.</p>
+      <p class="rata">1 : ⅓ = ... artinya ... × ⅓ = 1 atau sama dengan berapa kali ⅓ agar sama dengan 1. Akhirnya, kita
+        dapat
+        menemukan bahwa: 1 : ⅓ = 3 karena 3 × ⅓ = 1.</p>
+    </div>
+
+    <h2 style="margin-top: 2%;">Kegiatan Belajar</h2>
+    <ol style="font-size: larger;">
+      <li>
+        3/4 + 2/4 =
+      </li>
+      <li>
+        3/9 + 4/9 =
+      </li>
+      <li>
+        4/8 - 3/8 =
+      </li>
+      <li>
+        3 x 1/7 =
+      </li>
+      <li>
+        1/2 : 2 =
+      </li>
+    </ol>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Tambahkan di akhir body sebelum closing tag -->
+  <script>
+    window.addEventListener('load', function () {
+      // Sembunyikan preloader
+      const preloader = document.querySelector('.preloader');
+      document.body.classList.add('loaded');
+
+      setTimeout(function () {
+        preloader.classList.add('fade-out');
+
+        // Hapus preloader dari DOM setelah transisi
+        setTimeout(function () {
+          preloader.style.display = 'none';
+        }, 500);
+      }, 1000); // Waktu loading bisa disesuaikan
+    });
+  </script>
+</body>
+
+</html>
