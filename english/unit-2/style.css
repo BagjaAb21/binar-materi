@@ -182,9 +182,9 @@ audio::-webkit-media-controls-play-button {
   padding: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  height: 100%;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .greeting-card:hover {
@@ -195,17 +195,20 @@ audio::-webkit-media-controls-play-button {
 .card-image-wrapper {
   position: relative;
   width: 100%;
-  height: 200px; /* Tinggi tetap untuk gambar */
+  height: 200px;
   margin-bottom: 15px;
   overflow: hidden;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Style Gambar */
 .greeting-img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Memastikan gambar tidak terpotong */
+  object-fit: contain;
   transition: transform 0.3s ease;
 }
 
@@ -217,6 +220,9 @@ audio::-webkit-media-controls-play-button {
 .greeting-text {
   text-align: center;
   padding: 0.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .greeting-text .english {
@@ -230,27 +236,36 @@ audio::-webkit-media-controls-play-button {
   font-size: 1.25rem;
   color: var(--text-secondary);
   font-style: italic;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
+}
+
+.audio-container audio {
+  width: 100%;
+  max-width: 250px;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 991.98px) {
+  .card-image-wrapper {
+    height: 180px;
+  }
+
   .greeting-text .english {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .greeting-text .indonesian {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 575.98px) {
   .greeting-card {
-    padding: 1rem;
+    padding: 15px;
   }
 
   .card-image-wrapper {
-    padding-top: 66.67%; /* 3:2 Aspect Ratio for mobile */
+    height: 160px; /* 3:2 Aspect Ratio for mobile */
   }
 }
 /* end section sapaan */
