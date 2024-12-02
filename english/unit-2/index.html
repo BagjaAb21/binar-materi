@@ -320,123 +320,112 @@
     <!-- End Section Table1 -->
 
     <div class="container my-5">
-      <div class="section-title mb-4">
-        <h2 id="kata-sifat" style="font-size: larger;">3. Kata sifat terkait kabar seseorang</h2>
+      <!-- Section Title -->
+      <div class="section-title">
+        <h2 id="sapaan-sehari-hari" style="font-size: larger;">3. Kata sifat terkait kabar seseorang</h2>
       </div>
 
-      <!-- Container Utama dengan Flexbox -->
-      <div class="moods-container">
+      <!-- Greetings Grid -->
+      <div class="row g-4">
+        <!-- Morning Card -->
+
         <!-- Happy Card -->
-        <div class="mood-card">
-          <div class="mood-badge">Happy</div>
-          <div class="mood-content">
-            <div class="image-container">
-              <img src="assets/happy.png" alt="Happy expression">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card">
+            <div class="card-image-wrapper">
+              <img src="assets/happy.png" class="greeting-img" alt="pict Happy mood">
             </div>
-            <div class="mood-text">
-              <p class="english-text">
-                I am <span class="mood-word">happy</span> today!
-              </p>
-              <p class="indo-text">
-                (Saya <span class="mood-word-indo">senang</span> hari ini!)
-              </p>
-              <audio class="mt-4" controls>
-                <source src="audio/happy_today.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-              </audio>
+            <div class="greeting-text">
+              <h3 class="english">I am <span class="mood-word">Happy</span> today!</h3>
+              <p class="indonesian">(Saya <span class="mood-word">senang</span> hari ini!)</p>
+              <div class="audio-container">
+                <audio controls>
+                  <source src="audio/happy_today.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Sad Card -->
-        <div class="mood-card">
-          <div class="mood-badge">Sad</div>
-          <div class="mood-content">
-            <div class="image-container">
-              <img src="assets/sad.png" alt="Sad expression">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card">
+            <div class="card-image-wrapper">
+              <img src="assets/sad.png" class="greeting-img" alt="pict sad mood">
             </div>
-            <div class="mood-text">
-              <p class="english-text">
-                I am <span class="mood-word">sad</span> because it is raining.
-              </p>
-              <p class="indo-text">
-                (Saya <span class="mood-word-indo">sedih</span> karena sedang hujan.)
-              </p>
-              <audio class="mt-4" controls>
-                <source src="audio/sad_raining.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-              </audio>
+            <div class="greeting-text">
+              <h3 class="english">I am <span class="mood-word">sad</span> because it is raining.</h3>
+              <p class="indonesian">(saya <span class="mood-word">sedih</span> karena sedang hujan.)</p>
+              <div class="audio-container">
+                <audio controls>
+                  <source src="audio/sad_raining.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Tired Card -->
-        <div class="mood-card">
-          <div class="mood-badge">Tired</div>
-          <div class="mood-content">
-            <div class="image-container">
-              <img src="assets/worktable.png" alt="Tired expression">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card">
+            <div class="card-image-wrapper">
+              <img src="assets/worktable.png" class="greeting-img" alt="Pict tired mood">
             </div>
-            <div class="mood-text">
-              <p class="english-text">
-                I am <span class="mood-word">tired</span> after playing soccer.
-              </p>
-              <p class="indo-text">
-                (Saya <span class="mood-word-indo">lelah</span> setelah bermain sepak bola.)
-              </p>
-              <audio class="mt-4" controls>
-                <source src="audio/tired_playing_soccer.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-              </audio>
+            <div class="greeting-text">
+              <h3 class="english">I am <span class="mood-word">tired</span> after playing soccer.</h3>
+              <p class="indonesian">(saya <span class="mood-word">lelah</span> setelah bermain sepak bola )</p>
+              <div class="audio-container">
+                <audio controls>
+                  <source src="audio/tired_playing_soccer.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Excited Card -->
-        <div class="mood-card">
-          <div class="mood-badge">Excited</div>
-          <div class="mood-content">
-            <div class="image-container">
-              <img src="assets/excited.png" alt="Excited expression">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card">
+            <div class="card-image-wrapper">
+              <img src="assets/excited.png" class="greeting-img" alt="pict excited mood">
             </div>
-            <div class="mood-text">
-              <p class="english-text">
-                I am <span class="mood-word">excited</span> about the trip!
-              </p>
-              <p class="indo-text">
-                (Saya <span class="mood-word-indo">bersemangat</span> tentang perjalanannya!)
-              </p>
-              <audio class="mt-4" controls>
-                <source src="audio/excited_trip.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-              </audio>
+            <div class="greeting-text">
+              <h3 class="english">I am <span class="mood-word">excited</span> about the trip!</h3>
+              <p class="indonesian">(saya <span class="mood-word">bersemangat</span> tentang perjalanannya! )</p>
+              <div class="audio-container">
+                <audio controls>
+                  <source src="audio/excited_trip.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Angry Card -->
-        <div class="mood-card">
-          <div class="mood-badge">Angry</div>
-          <div class="mood-content">
-            <div class="image-container">
-              <img src="assets/anger.png" alt="Angry expression">
+        <!-- angry Card -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="greeting-card">
+            <div class="card-image-wrapper">
+              <img src="assets/anger.png" class="greeting-img" alt="pict anger mood">
             </div>
-            <div class="mood-text">
-              <p class="english-text">
-                I am <span class="mood-word">angry</span> because my toy is broken.
-              </p>
-              <p class="indo-text">
-                (Saya <span class="mood-word-indo">marah</span> karena mainan saya rusak.)
-              </p>
-              <audio class="mt-4" controls>
-                <source src="audio/angry_toys_broken.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-              </audio>
+            <div class="greeting-text">
+              <h3 class="english">I am <span class="mood-word">angry</span> because my toy is broken.</h3>
+              <p class="indonesian">(Saya <span class="mood-word">marah</span> karena mainan saya rusak! )</p>
+              <div class="audio-container">
+                <audio controls>
+                  <source src="audio/angry_toys_broken.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- Section untuk latihan -->
     <div class="container py-4 mb-4" style="margin-top: 2%;">
       <!-- Section Title with Icon -->
@@ -521,7 +510,6 @@
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
 
   <!-- Tambahkan di akhir body sebelum closing tag -->
   <script>

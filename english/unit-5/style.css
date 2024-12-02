@@ -21,6 +21,94 @@ body {
   height: 3px;
   background: linear-gradient(90deg, transparent, #666, transparent);
 }
+/* barang barang di sekolah */
+.greeting-card {
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.greeting-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Wrapper Gambar */
+.card-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Tinggi tetap untuk gambar */
+  margin-bottom: 15px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Style Gambar */
+.greeting-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Memastikan gambar tidak terpotong */
+  transition: transform 0.3s ease;
+}
+
+.greeting-card:hover .greeting-img {
+  transform: scale(1.05);
+}
+
+/* Text Styles */
+.greeting-text {
+  text-align: center;
+  padding: 10px;
+}
+
+.greeting-text .english {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.greeting-text .indonesian {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-bottom: 3px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+  .greeting-text .english {
+    font-size: 1.1rem;
+  }
+
+  .greeting-text .indonesian {
+    font-size: 0.9rem;
+  }
+
+  .card-image-wrapper {
+    height: 180px; /* Mengurangi tinggi gambar untuk tablet */
+  }
+}
+
+@media (max-width: 575.98px) {
+  .greeting-card {
+    padding: 1rem;
+  }
+
+  .card-image-wrapper {
+    height: 150px; /* Mengurangi tinggi gambar untuk mobile */
+  }
+
+  .greeting-img {
+    object-fit: contain; /* Tetap mempertahankan rasio aspek */
+  }
+}
+
+/* end */
 
 .items-container {
   display: flex;

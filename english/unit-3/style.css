@@ -140,6 +140,11 @@ audio::-webkit-media-controls-play-button {
   height: 24px;
 }
 
+.audio-container audio {
+  width: 100%;
+  max-width: 250px;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .header-section {

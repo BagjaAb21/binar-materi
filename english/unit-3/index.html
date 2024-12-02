@@ -499,39 +499,45 @@
     <!-- End Section Table1 -->
 
     <!-- section table with gambar -->
-    <div class="container my-5">
-      <div class="possession-table">
-        <table class="table table-bordered">
-          <thead>
+    <div class="container-fluid px-3 mt-4">
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+          <thead class="thead-light">
             <tr>
-              <th>His</th>
-              <th>Her</th>
+              <th scope="col" class="text-center">His</th>
+              <th scope="col" class="text-center">Her</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>
-                <b>'His'</b> digunakan untuk menunjukkan kepemilikan laki-laki
-                <img src="assets/dad.png" alt="Father example" class="example-img">
-                <div class="example-text">
-                  <div class="example-english">This is my father. <b>'His'</b> name is Ahmad</div>
-                  <div class="example-indo">(Ini adalah Ayah saya. Nama<b>nya</b> adalah Ahmad)</div>
-              <audio class="mt-4" controls>
-                <source src="audio/this_is_my_father.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-              </audio>
+              <td class="text-center">
+                <strong>'His'</strong>
+                <p class="small text-muted">Kepemilikan Laki-laki</p>
+                <img src="assets/dad.png" class="img-fluid rounded" alt="Father example">
+                <div class="mt-2">
+                  <p class="mt-2">This is my father. <strong>His</strong> name is Ahmad</p>
+                  <p class="mt-2">Ini adalah ayah saya. Nama<strong>nya</strong> adalah Ahmad</p>
+                </div>
+                <div class="audio-container">
+                  <audio controls>
+                    <source src="audio/that_is_my_sister.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
                 </div>
               </td>
-              <td>
-                <b>'Her'</b> digunakan untuk menunjukkan kepemilikan perempuan
-                <img src="assets/sister-in-law.png" alt="Sister example" class="example-img">
-                <div class="example-text">
-                  <div class="example-english">That is my sister. <b>'Her'</b> name is Karin</div>
-                  <div class="example-indo">(Itu adalah saudara saya. Nama<b>nya</b> adalah Karin)</div>
-              <audio class="mt-4" controls>
-                <source src="audio/that_is_my_sister.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-              </audio>
+              <td class="text-center">
+                <strong>'Her'</strong>
+                <p class="small text-muted">Kepemilikan Perempuan</p>
+                <img src="assets/sister-in-law.png" class="img-fluid rounded" alt="Sister example">
+                <div class="mt-2">
+                  <p class="mt-2">That is my sister. <strong>Her</strong> name is Karin</p>
+                  <p class="mt-2">Itu adalah saudara (perempuan) saya. Nama<strong>nya</strong> adalah Syifa</p>
+                </div>
+                <div class="audio-container">
+                  <audio controls>
+                    <source src="audio/that_is_my_sister.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
                 </div>
               </td>
             </tr>
@@ -593,7 +599,7 @@
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+
   <!-- Tambahkan di akhir body sebelum closing tag -->
   <script>
     window.addEventListener('load', function () {
